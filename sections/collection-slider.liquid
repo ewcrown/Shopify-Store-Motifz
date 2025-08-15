@@ -1,0 +1,634 @@
+{%- assign product_limit = section.settings.max_products -%}
+{%- assign collection = collections[section.settings.collection] -%}
+
+{%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
+
+<div
+  id="CollectionSliderSection-{{ section.id }}"
+  data-section-id="{{ section.id }}"
+  data-section-type="collection-slider"
+  class="featured-collection-slider-section">
+  
+  {%- if section.settings.title != blank or section.settings.show_view_all -%}
+    <div class="page-width">
+      <div class="section-header{% if section.settings.show_view_all %}{% unless settings.type_headers_align_text %} section-header--with-link{% endunless %}{% endif %}">
+        <h2 class="section-header__title">
+          {{ section.settings.title }}
+        </h2>
+        {%- if section.settings.show_view_all -%}
+          <a href="{{ collections[section.settings.collection].url }}" class="btn btn--secondary btn--small section-header__link">View All</a>
+        {%- endif -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  <div class="page-width">
+    <div class="featured-collection-slider" id="featured-collection-slider" data-slider-id="{{ section.id }}">
+      <div class="slider-loading">Loading products...</div>
+      <div class="swiper featured-collection-swiper" style="display: none;">
+        <div class="swiper-wrapper">
+          {%- if section.settings.collection == blank or collections[section.settings.collection].empty? or collections[section.settings.collection].products_count == 0 -%}
+            {%- unless emptyState -%}
+              {%- assign emptyState = true -%}
+            {%- endunless -%}
+            
+            {%- for i in (1..product_limit) -%}
+                              <div class="swiper-slide">
+                  <div class="hello slider-product-card" style="border-radius: {% if section.settings.card_style == 'rounded' %}12px{% elsif section.settings.card_style == 'sharp' %}0{% else %}6px{% endif %}; box-shadow: {% if section.settings.card_style == 'minimal' %}0 2px 8px rgba(0, 0, 0, 0.05){% else %}0 4px 20px rgba(0, 0, 0, 0.08){% endif %};">
+                    <div class="slider-product-image">
+                      {%- capture current -%}{% cycle 1, 2, 3, 4, 5, 6 %}{%- endcapture -%}
+                      <div class="image-wrap">{{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}</div>
+                      {%- if section.settings.show_sale_badge -%}
+                        <div class="sale-badge" style="background-color: {{ section.settings.sale_badge_color }};">Sale</div>
+                      {%- endif -%}
+                    </div>
+                    <div class="slider-product-info">
+                      <div class="product-header">
+                        <div class="product-title">{{ 'home_page.onboarding.product_title' | t }}</div>
+                        <button class="cart-icon-btn" title="Add to Cart">
+                          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </button>
+                      </div>
+                      {%- if section.settings.show_product_code -%}
+                        <div class="product-code">5{{ current | plus: 30 }}</div>
+                      {%- endif -%}
+                      <div class="product-price">
+                        <span class="original-price">Rs.13,990.00</span>
+                        <span class="sale-price">Rs.10,493.00</span>
+                        {%- if section.settings.show_savings -%}
+                          <span class="savings" style="color: {{ section.settings.savings_text_color }};">Save Rs.3,497.00</span>
+                        {%- endif -%}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            {%- endfor -%}
+          {%- else -%}
+            {%- for product in collections[section.settings.collection].products limit: product_limit -%}
+              <div class="swiper-slide">
+                {%- render 'product-grid-item', product: product, quick_shop_enable: true -%}
+              </div>
+            {%- endfor -%}
+          {%- endif -%}
+        </div>
+        
+        <!-- Slider Navigation -->
+        <div class="swiper-button-next featured-collection-swiper-button-next"></div>
+        <div class="swiper-button-prev featured-collection-swiper-button-prev"></div>
+        
+        <!-- Slider Pagination -->
+        <div class="swiper-pagination featured-collection-swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{%- if section.settings.divider -%}</div>{%- endif -%}
+
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+<!-- Custom Slider Styles -->
+<style>
+  .featured-collection-slider-section {
+    padding: 60px 0;
+    background: #ffffff;
+  }
+  
+  .featured-collection-slider {
+    position: relative;
+    padding: 20px 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .featured-collection-slider.loaded {
+    opacity: 1;
+  }
+  
+  .slider-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    color: #666;
+    font-size: 16px;
+  }
+  
+  .featured-collection-swiper {
+    width: 100%;
+    padding: 0 60px;
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .featured-collection-swiper.initialized {
+    opacity: 1;
+  }
+  
+  .featured-collection-swiper .swiper-slide {
+    height: auto;
+    display: flex;
+    align-items: stretch;
+  }
+  
+  .slider-product-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .slider-product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .slider-product-image {
+    position: relative;
+    aspect-ratio: 1;
+    overflow: hidden;
+  }
+  
+  .slider-product-image img,
+  .slider-product-image .placeholder-svg {
+    width: 100%;
+    height: 100%;
+    object-fit: {% if section.settings.image_display == 'cover' %}cover{% else %}cover{% endif %};
+    display: block;
+    background: #f8f8f8;
+  }
+  
+  .sale-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #ff4757;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .slider-product-info {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 8px;
+  }
+  
+  .product-code {
+    font-size: 14px;
+    color: #666;
+    font-weight: 500;
+  }
+  
+  .product-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    line-height: 1.4;
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .product-title a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .product-title a:hover {
+    color: #007bff;
+  }
+  
+  .cart-icon-btn {
+    background: #000;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+  }
+  
+  .cart-icon-btn:hover {
+    background: #333;
+    transform: scale(1.05);
+  }
+  
+  .cart-icon-btn svg {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .product-price {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .original-price {
+    font-size: 14px;
+    color: #999;
+    text-decoration: line-through;
+  }
+  
+  .sale-price {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+  }
+  
+  .savings {
+    font-size: 14px;
+    color: #ff4757;
+    font-weight: 600;
+  }
+  
+  .featured-collection-swiper-button-next,
+  .featured-collection-swiper-button-prev {
+    color: #333 !important;
+    background: rgba(255, 255, 255, 0.95) !important;
+    width: 44px !important;
+    height: 44px !important;
+    border-radius: 50% !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+    transition: all 0.3s ease !important;
+    border: 1px solid #e0e0e0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    z-index: 10 !important;
+  }
+  
+  .featured-collection-swiper-button-next:hover,
+  .featured-collection-swiper-button-prev:hover {
+    background: #333;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .featured-collection-swiper-button-next::after,
+  .featured-collection-swiper-button-prev::after {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .featured-collection-swiper-pagination {
+    position: relative;
+    margin-top: 30px;
+  }
+  
+  .featured-collection-swiper-pagination .swiper-pagination-bullet {
+    background: #333;
+    opacity: 0.3;
+    transition: all 0.3s ease;
+    width: 8px;
+    height: 8px;
+  }
+  
+  .featured-collection-swiper-pagination .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #333;
+    transform: scale(1.3);
+  }
+  
+  @media (max-width: 768px) {
+    .featured-collection-swiper {
+      padding: 0 40px;
+    }
+    
+    .featured-collection-swiper-button-next,
+    .featured-collection-swiper-button-prev {
+      width: 40px;
+      height: 40px;
+    }
+    
+    .featured-collection-swiper-button-next::after,
+    .featured-collection-swiper-button-prev::after {
+      font-size: 16px;
+    }
+    
+    .slider-product-info {
+      padding: 16px;
+    }
+    
+    .product-title {
+      font-size: 14px;
+    }
+    
+    .sale-price {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .featured-collection-swiper {
+      padding: 0 30px;
+    }
+    
+    .featured-collection-swiper-button-next,
+    .featured-collection-swiper-button-prev {
+      width: 36px;
+      height: 36px;
+    }
+    
+    .slider-product-info {
+      padding: 14px;
+    }
+  }
+</style>
+
+<!-- Swiper JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Slider -->
+<script>
+  // Add to Cart Function
+  function addToCart(productId) {
+    // You can customize this function based on your Shopify setup
+    console.log('Adding product to cart:', productId);
+    
+    // Example: Add to cart via AJAX
+    fetch('/cart/add.js', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        id: productId,
+        quantity: 1
+      })
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log('Product added to cart:', data);
+      // You can add success notification here
+      alert('Product added to cart!');
+    })
+    .catch(error => {
+      console.error('Error adding to cart:', error);
+      alert('Error adding product to cart');
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const sliderId = '{{ section.id }}';
+    const sliderSection = document.querySelector(`[data-slider-id="${sliderId}"]`);
+    const sliderContainer = sliderSection.querySelector('.featured-collection-swiper');
+    const loadingElement = sliderSection.querySelector('.slider-loading');
+    
+    if (sliderContainer && loadingElement) {
+      // Hide loading, show slider
+      loadingElement.style.display = 'none';
+      sliderContainer.style.display = 'block';
+      
+      // Initialize Swiper
+      const swiper = new Swiper(sliderContainer, {
+        // Responsive breakpoints
+        breakpoints: {
+          // Mobile: 1.7 slides
+          320: {
+            slidesPerView: 1.7,
+            spaceBetween: 20,
+            centeredSlides: true,
+          },
+          // Tablet: 2.5 slides
+          768: {
+            slidesPerView: 2.5,
+            spaceBetween: 25,
+          },
+          // Desktop: 4 slides
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          }
+        },
+        
+        // Optional parameters
+        loop: {% if section.settings.enable_loop %}true{% else %}false{% endif %},
+        autoplay: {% if section.settings.enable_autoplay %}{
+          delay: {{ section.settings.autoplay_speed | times: 1000 }},
+          disableOnInteraction: false,
+        }{% else %}false{% endif %},
+        grabCursor: true,
+        effect: 'slide',
+        
+        // Navigation
+        navigation: {
+          nextEl: '.featured-collection-swiper-button-next',
+          prevEl: '.featured-collection-swiper-button-prev',
+        },
+        
+        // Pagination
+        pagination: {
+          el: '.featured-collection-swiper-pagination',
+          clickable: true,
+          dynamicBullets: true,
+        },
+        
+        // Touch and mouse events
+        touchEventsTarget: 'container',
+        simulateTouch: true,
+        
+        // Performance optimizations
+        watchSlidesProgress: true,
+        watchSlidesVisibility: true,
+        
+        // Responsive behavior
+        observer: true,
+        observeParents: true,
+        observeSlideChildren: true,
+      });
+      
+      // Add fade-in effect after initialization
+      setTimeout(() => {
+        sliderSection.classList.add('loaded');
+        sliderContainer.classList.add('initialized');
+      }, 100);
+    }
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Featured Slider",
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Popular Picks"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Select Collection"
+    },
+    {
+      "type": "range",
+      "id": "max_products",
+      "label": "Maximum Products to Show",
+      "default": 12,
+      "min": 4,
+      "max": 24,
+      "step": 2
+    },
+    {
+      "type": "header",
+      "content": "Slider Settings"
+    },
+    {
+      "type": "range",
+      "id": "autoplay_speed",
+      "label": "Autoplay Speed (seconds)",
+      "default": 4,
+      "min": 2,
+      "max": 8,
+      "step": 1
+    },
+    {
+      "type": "checkbox",
+      "id": "show_arrows",
+      "label": "Show Navigation Arrows",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_dots",
+      "label": "Show Pagination Dots",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_loop",
+      "label": "Enable Infinite Loop",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_autoplay",
+      "label": "Enable Autoplay",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Display Options"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_sale_badge",
+      "label": "Show Sale Badge",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_product_code",
+      "label": "Show Product Code",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_savings",
+      "label": "Show Savings Amount",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_view_all",
+      "label": "Show 'View All' Button",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Styling"
+    },
+    {
+      "type": "color",
+      "id": "sale_badge_color",
+      "label": "Sale Badge Color",
+      "default": "#ff4757"
+    },
+    {
+      "type": "color",
+      "id": "savings_text_color",
+      "label": "Savings Text Color",
+      "default": "#ff4757"
+    },
+    {
+      "type": "select",
+      "id": "card_style",
+      "label": "Card Style",
+      "options": [
+        {
+          "value": "rounded",
+          "label": "Rounded Corners"
+        },
+        {
+          "value": "sharp",
+          "label": "Sharp Corners"
+        },
+        {
+          "value": "minimal",
+          "label": "Minimal"
+        }
+      ],
+      "default": "rounded"
+    },
+    {
+      "type": "select",
+      "id": "image_display",
+      "label": "Image Display",
+      "options": [
+        {
+          "value": "contain",
+          "label": "Show Complete Image"
+        },
+        {
+          "value": "cover",
+          "label": "Fill Container (Crop)"
+        }
+      ],
+      "default": "contain",
+      "info": "Choose how product images are displayed"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured Collection Slider",
+      "category": "Collection"
+    }
+  ],
+  "blocks": [],
+  "disabled_on": {
+    "groups": ["footer", "header", "custom.popups"]
+  }
+}
+{% endschema %}

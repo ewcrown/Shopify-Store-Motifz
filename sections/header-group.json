@@ -1,0 +1,81 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "t:sections.header-group.name",
+  "sections": {
+    "announcement": {
+      "type": "announcement",
+      "blocks": {
+        "announcement-0": {
+          "type": "announcement",
+          "settings": {
+            "text": "Free shipping",
+            "link_text": "On all orders over $100",
+            "link": ""
+          }
+        },
+        "announcement-1": {
+          "type": "announcement",
+          "settings": {
+            "text": "Hassle-free returns",
+            "link_text": "30-day postage paid returns",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement-0",
+        "announcement-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "announcement_compact": true
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "logo": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Final_Logo_Motifz_for_web_37f34449-87b2-4eea-ba93-46872b303f77.png",
+            "desktop_logo_width": 120,
+            "mobile_logo_width": 120
+          }
+        }
+      },
+      "block_order": [
+        "logo"
+      ],
+      "custom_css": [
+        ".is-light .site-nav__link,.is-light .site-nav__link:hover {font-weight: 700;}"
+      ],
+      "settings": {
+        "main_menu_link_list": "main-menu-new-theme",
+        "hover_menu": true,
+        "mega_menu_images": true,
+        "main_menu_alignment": "center",
+        "header_style": "sticky",
+        "sticky_index": true,
+        "sticky_collection": true,
+        "toolbar_menu": "",
+        "toolbar_social": true,
+        "show_locale_selector": true,
+        "show_currency_selector": false,
+        "show_currency_flags": false
+      }
+    }
+  },
+  "order": [
+    "announcement",
+    "header"
+  ]
+}

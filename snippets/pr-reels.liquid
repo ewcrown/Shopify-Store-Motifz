@@ -1,0 +1,22 @@
+{% comment %}
+  This file handles each block available on product.sections or page.sections templates.
+  Each block is a near identical duplicate of a section also available on the home page.
+  Exception is sections that had blocks become hard coded options.
+{% endcomment %}
+<div class="grid grid--uniform page-blocks swiper block-reels">
+  <div class="swiper-wrapper">
+    {%- for block in section.blocks -%}
+      <div
+        class="swiper-slide grid__item grid-product small--one-half medium-up--one-quarter aos-init aos-animate"
+        {{ block.shopify_attributes }}
+      >
+        {%- case block.type -%}
+          {%- when 'hero-video' -%}
+            {%- render 'reel-block', block: block -%}
+        {%- endcase -%}
+      </div>
+    {%- endfor -%}
+  </div>
+    <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+</div>

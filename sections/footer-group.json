@@ -1,0 +1,118 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "t:sections.footer-group.name",
+  "sections": {
+    "footer-promotions": {
+      "type": "footer-promotions",
+      "blocks": {
+        "promotion-1": {
+          "type": "promotion",
+          "settings": {
+            "enable_image": true,
+            "image_mask": "landscape",
+            "title": "Summer 2022 release",
+            "text": "<p>Our latest breezy looks just in time for summer. Just in time for more fun in the sun.</p>",
+            "button_label": "Shop now",
+            "button_link": ""
+          }
+        },
+        "promotion-2": {
+          "type": "promotion",
+          "settings": {
+            "enable_image": true,
+            "image_mask": "landscape",
+            "title": "New Encinitas store",
+            "text": "<p>Try out all your favourite looks at our new flagship store in Encinitas, California.</p>",
+            "button_label": "View map",
+            "button_link": "https://maps.google.com/?daddr=Encinitas,%20California"
+          }
+        },
+        "promotion-3": {
+          "type": "promotion",
+          "settings": {
+            "enable_image": true,
+            "image_mask": "landscape",
+            "title": "Save 10% on dresses",
+            "text": "<p>Sun protection doesn't have to be a hassle — add a whole new layer to your style. </p>",
+            "button_label": "Shop dresses",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "promotion-1",
+        "promotion-2",
+        "promotion-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "hide_homepage": true
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "menu-1": {
+          "type": "menu",
+          "settings": {
+            "show_footer_title": false,
+            "menu": "main-menu",
+            "container_width": 20
+          }
+        },
+        "menu-2": {
+          "type": "menu",
+          "settings": {
+            "show_footer_title": false,
+            "menu": "footer",
+            "container_width": 20
+          }
+        },
+        "menu-3": {
+          "type": "menu",
+          "settings": {
+            "show_footer_title": false,
+            "menu": "footer",
+            "container_width": 20
+          }
+        },
+        "newsletter": {
+          "type": "newsletter",
+          "settings": {
+            "show_footer_title": false,
+            "title": "Sign up and save",
+            "text": "<p>Be the first to know about our biggest and best sales. We'll never send more than one email a month.</p>",
+            "container_width": 33
+          }
+        }
+      },
+      "block_order": [
+        "menu-1",
+        "menu-2",
+        "menu-3",
+        "newsletter"
+      ],
+      "settings": {
+        "show_locale_selector": true,
+        "show_currency_selector": true,
+        "show_currency_flags": true,
+        "show_payment_icons": true,
+        "show_copyright": false,
+        "copyright_text": ""
+      }
+    }
+  },
+  "order": [
+    "footer-promotions",
+    "footer"
+  ]
+}

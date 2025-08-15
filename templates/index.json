@@ -1,0 +1,358 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "image-1": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "Fall\nessentials",
+            "title_size": 64,
+            "subheading": "Celebrate joyful moments with the House's emblematic pieces.",
+            "link": "",
+            "link_text": "Shop all",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#321004",
+            "text_align": "vertical-center horizontal-center",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        },
+        "image-2": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "Inspired\nby Nature",
+            "title_size": 69,
+            "subheading": "",
+            "link": "",
+            "link_text": "Shop Now",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#6b3f21",
+            "text_align": "vertical-center horizontal-center",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        },
+        "image-3": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "Luxette's STYLE",
+            "title_size": 63,
+            "subheading": "Fresh looks for sunny days.",
+            "link": "",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "Shop all",
+            "color_accent": "#8b4e40",
+            "text_align": "vertical-center horizontal-center",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image-1",
+        "image-2",
+        "image-3"
+      ],
+      "settings": {
+        "section_height": "100vh",
+        "mobile_height": "100vh",
+        "parallax": true,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "lazyload_images": true
+      }
+    },
+    "featured_collections_H7qKtY": {
+      "type": "featured-collection-image",
+      "blocks": {
+        "collection_NH3VDW": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/Option_1.png",
+            "collection": "premium-lawn",
+            "title": "Premium Lawn 3",
+            "focal_point": "center center"
+          }
+        },
+        "collection_HNpydP": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/Riwayat_Circle.png",
+            "collection": "formal",
+            "title": "Formals",
+            "focal_point": "center center"
+          }
+        },
+        "collection_WjUBjz": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/AMAL_Web_Circle.png",
+            "collection": "amal-lawn",
+            "title": "AMAL EID LAWN",
+            "focal_point": "center center"
+          }
+        },
+        "collection_zr9XaP": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/PL_Web_Circle.png",
+            "collection": "premium-lawn-25",
+            "title": "Premium Lawn 25",
+            "focal_point": "center center"
+          }
+        },
+        "collection_bQn6Tj": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/Rang_Circle_929c79e0-4e12-4f30-964c-53b546e9d457.png",
+            "collection": "rang-lawn",
+            "title": "Rang Lawn 25",
+            "focal_point": "center center"
+          }
+        },
+        "collection_dipEiH": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/Umang_Circle.png",
+            "collection": "umang-lawn",
+            "title": "Umang Lawn",
+            "focal_point": "center center"
+          }
+        },
+        "collection_6t7hNM": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/Casual_Pret.png",
+            "collection": "pret",
+            "title": "CAsual Pret",
+            "focal_point": "center center"
+          }
+        },
+        "link_QAe9gm": {
+          "type": "link",
+          "settings": {
+            "image": "shopify://shop_images/Coture_Web_Circle.png",
+            "link": "shopify://collections/amal-lawn",
+            "title": "couture",
+            "focal_point": "center center"
+          }
+        },
+        "collection_CjQmtC": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/Velvet_Web_Circle.png",
+            "collection": "velvet",
+            "title": "Velvet",
+            "focal_point": "center center"
+          }
+        },
+        "collection_cVjTYg": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/Soha_ff3ad1e8-1712-411c-98dc-a8d44ab9da3b.png",
+            "collection": "soha-lawn",
+            "title": "SOHA",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "collection_NH3VDW",
+        "collection_HNpydP",
+        "collection_WjUBjz",
+        "collection_zr9XaP",
+        "collection_bQn6Tj",
+        "collection_dipEiH",
+        "collection_6t7hNM",
+        "link_QAe9gm",
+        "collection_CjQmtC",
+        "collection_cVjTYg"
+      ],
+      "settings": {
+        "title": "Our Collections",
+        "divider": false,
+        "per_row": 5,
+        "enable_gutter": true
+      }
+    },
+    "featured-collection": {
+      "type": "collection-slider",
+      "settings": {
+        "title": "Popular Picks",
+        "collection": "amal-lawn",
+        "max_products": 12,
+        "autoplay_speed": 8,
+        "show_arrows": true,
+        "show_dots": true,
+        "enable_loop": true,
+        "enable_autoplay": false,
+        "show_sale_badge": true,
+        "show_product_code": true,
+        "show_savings": true,
+        "show_view_all": true,
+        "sale_badge_color": "#ff4757",
+        "savings_text_color": "#ff4757",
+        "card_style": "rounded",
+        "image_display": "contain"
+      }
+    },
+    "background_image_text_VNybzb": {
+      "type": "background-image-text",
+      "name": "t:sections.background-image-text.presets.large_image_with_text_box.name",
+      "settings": {
+        "subtitle": "",
+        "title": "",
+        "text": "",
+        "button_label": "",
+        "button_link": "",
+        "layout": "left",
+        "height": 550,
+        "framed": false,
+        "parallax": true,
+        "parallax_direction": "top",
+        "lazyload_images": true
+      }
+    },
+    "collection_slider_Bte4nb": {
+      "type": "collection-slider",
+      "settings": {
+        "title": "Popular Picks",
+        "collection": "amal-lawn",
+        "max_products": 12,
+        "autoplay_speed": 4,
+        "show_arrows": true,
+        "show_dots": true,
+        "enable_loop": true,
+        "enable_autoplay": true,
+        "show_sale_badge": true,
+        "show_product_code": true,
+        "show_savings": true,
+        "show_view_all": true,
+        "sale_badge_color": "#ff4757",
+        "savings_text_color": "#ff4757",
+        "card_style": "rounded",
+        "image_display": "contain"
+      }
+    },
+    "product_story_sections_KNazdq": {
+      "type": "pr-reels",
+      "blocks": {
+        "hero_video_3rfLfh": {
+          "type": "hero-video",
+          "settings": {
+            "link_text": "",
+            "link": "",
+            "text_align": "vertical-center horizontal-center",
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/aeeaf509ad9e409f98c99569cfa4c63e.mp4",
+            "section_height": "650px",
+            "mobile_height": "auto"
+          }
+        },
+        "hero_video_a4XKGk": {
+          "type": "hero-video",
+          "settings": {
+            "link_text": "Optional button",
+            "link": "",
+            "text_align": "vertical-center horizontal-center",
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/f525ae85c1f345589a0b046e7aefd729.mp4",
+            "section_height": "650px",
+            "mobile_height": "auto"
+          }
+        },
+        "hero_video_X9Mpg4": {
+          "type": "hero-video",
+          "settings": {
+            "link_text": "Optional button",
+            "link": "",
+            "text_align": "vertical-center horizontal-center",
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/9a7d40b2666d43799ea435eec8fc1f52.mp4",
+            "section_height": "650px",
+            "mobile_height": "auto"
+          }
+        },
+        "hero_video_WB3PD6": {
+          "type": "hero-video",
+          "settings": {
+            "link_text": "Optional button",
+            "link": "",
+            "text_align": "vertical-center horizontal-center",
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/a9504f1115b940daa75af16ee6cfe684.mp4",
+            "section_height": "650px",
+            "mobile_height": "auto"
+          }
+        },
+        "hero_video_jkJziQ": {
+          "type": "hero-video",
+          "settings": {
+            "link_text": "Optional button",
+            "link": "",
+            "text_align": "vertical-center horizontal-center",
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/4b398d2d8ce642289d81c240b18442d0.mp4",
+            "section_height": "650px",
+            "mobile_height": "auto"
+          }
+        },
+        "hero_video_bdkfhc": {
+          "type": "hero-video",
+          "settings": {
+            "link_text": "Optional button",
+            "link": "",
+            "text_align": "vertical-center horizontal-center",
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/cab9f32d54174e02aa3af6ccadb9acc6.mp4",
+            "section_height": "650px",
+            "mobile_height": "auto"
+          }
+        },
+        "hero_video_agBEmP": {
+          "type": "hero-video",
+          "disabled": true,
+          "settings": {
+            "link_text": "Optional button",
+            "link": "",
+            "text_align": "vertical-center horizontal-center",
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/928520a814f34902b2ad7b7e8c0c472e.mp4",
+            "section_height": "650px",
+            "mobile_height": "auto"
+          }
+        }
+      },
+      "block_order": [
+        "hero_video_3rfLfh",
+        "hero_video_a4XKGk",
+        "hero_video_X9Mpg4",
+        "hero_video_WB3PD6",
+        "hero_video_jkJziQ",
+        "hero_video_bdkfhc",
+        "hero_video_agBEmP"
+      ],
+      "settings": {
+        "title": "Motifz instagram"
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "featured_collections_H7qKtY",
+    "featured-collection",
+    "background_image_text_VNybzb",
+    "collection_slider_Bte4nb",
+    "product_story_sections_KNazdq"
+  ]
+}

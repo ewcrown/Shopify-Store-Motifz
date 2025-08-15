@@ -1,0 +1,196 @@
+{%- if section.settings.title != blank -%}
+  <div class="page-width">
+    <div class="section-header">
+      <h2 class="section-header__title">
+        {{ section.settings.title }}
+      </h2>
+    </div>
+  </div>
+{%- endif -%}
+<div class="page-width">
+  {%- render 'pr-reels', section: section -%}
+</div>
+<style>
+.swiper-button-next{
+margin-top: 0px;
+position: absolute;
+top: 50%;
+right: 10px;
+width: 45px;
+height: 45px;
+transform: translateY(-50%);
+z-index: 99999;
+color: black;
+}
+.swiper-button-prev{
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  width: 45px;
+  height: 45px;
+  transform: translateY(-50%);
+  margin-top: 0px;
+  z-index: 99999;
+  color: black;
+}
+.swiper-button-next, .swiper-button-prev {
+  text-rendering: auto;
+}
+</style>
+<script>
+  const reelSlider = new Swiper('.block-reels', {
+    slidesPerView: 1.2,
+    autoplay: {
+      delay: 1000000,
+    },
+    navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+    loop: false,
+    breakpoints: {
+      480: {
+        slidesPerView: 4.2,
+      },
+    },
+  });
+</script>
+{% schema %}
+{
+  "name": "PR Reels",
+  "class": "index-section prreels",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Featured collection"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "hero-video",
+      "name": "Video hero",
+      "settings": [
+        {
+          "type": "text",
+          "id": "link_text",
+          "label": "Button text",
+          "default": "Optional button"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Button link",
+          "info": "Links to YouTube videos will be opened in a video player"
+        },
+        {
+          "type": "select",
+          "id": "text_align",
+          "label": "Text alignment",
+          "default": "vertical-center horizontal-center",
+          "options": [
+            {
+              "value": "vertical-center horizontal-left",
+              "label": "Center left"
+            },
+            {
+              "value": "vertical-center horizontal-center",
+              "label": "Center"
+            },
+            {
+              "value": "vertical-center horizontal-right",
+              "label": "Center right"
+            },
+            {
+              "value": "vertical-bottom horizontal-left",
+              "label": "Bottom left"
+            },
+            {
+              "value": "vertical-bottom horizontal-center",
+              "label": "Bottom center"
+            },
+            {
+              "value": "vertical-bottom horizontal-right",
+              "label": "Bottom right"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "video_url",
+          "label": "Background video link",
+          "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+          "info": "Supports YouTube, .MP4 and Vimeo. Not all features supported by Vimeo. [Learn more](https://archetypethemes.co/blogs/impulse/how-do-i-add-background-videos)"
+        },
+        {
+          "type": "select",
+          "id": "section_height",
+          "label": "Section height",
+          "default": "650px",
+          "options": [
+            {
+              "label": "450px",
+              "value": "450px"
+            },
+            {
+              "label": "550px",
+              "value": "550px"
+            },
+            {
+              "label": "650px",
+              "value": "650px"
+            },
+            {
+              "label": "750px",
+              "value": "750px"
+            },
+            {
+              "label": "Full screen",
+              "value": "100vh"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "mobile_height",
+          "label": "Mobile height",
+          "default": "auto",
+          "options": [
+            {
+              "label": "Auto",
+              "value": "auto"
+            },
+            {
+              "label": "250px",
+              "value": "250px"
+            },
+            {
+              "label": "300px",
+              "value": "300px"
+            },
+            {
+              "label": "400px",
+              "value": "400px"
+            },
+            {
+              "label": "500px",
+              "value": "500px"
+            },
+            {
+              "label": "Full screen",
+              "value": "100vh"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "PR Reels",
+      "category": "custom"
+    }
+  ]
+}
+{% endschema %}
