@@ -70,7 +70,7 @@
           {%- else -%}
             {%- for product in collections[section.settings.collection].products limit: product_limit -%}
               <div class="swiper-slide">
-                {%- render 'product-grid-item', product: product, quick_shop_enable: true -%}
+                {%- render 'product-grid-item', product: product, quick_shop_enable: false, custom_quick_shop_enable: true -%}
               </div>
             {%- endfor -%}
           {%- endif -%}

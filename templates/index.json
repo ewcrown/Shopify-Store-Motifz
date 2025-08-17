@@ -196,7 +196,7 @@
       "type": "collection-slider",
       "settings": {
         "title": "Popular Picks",
-        "collection": "amal-lawn",
+        "collection": "pret",
         "max_products": 12,
         "autoplay_speed": 8,
         "show_arrows": true,

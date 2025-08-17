@@ -46,7 +46,7 @@ Arguments
   endif
 -%}
 
-<div class="grid__item grid-product {{ gridView }} {% if quick_shop_enable %} grid-product__has-quick-shop{% endif %}" data-aos="row-of-{{ per_row }}" data-product-handle="{{ product.handle }}" data-product-id="{{ product.id }}">
+<div class="grid__item grid-product {{ gridView }} {% if quick_shop_enable %} grid-product__has-quick-shop{% endif %} custom-grid-product__has-quick-shop" data-aos="row-of-{{ per_row }}" data-product-handle="{{ product.handle }}" data-product-id="{{ product.id }}">
   <div class="grid-product__content">
     {%- if has_custom_label -%}
       <div class="grid-product__tag grid-product__tag--custom">
@@ -184,6 +184,15 @@ Arguments
             {{ settings.quick_shop_text }}
           </button>
         {%- endif -%}
+
+        {% if custom_quick_shop_enable  %}
+          <button
+  class="custom-quick-product__btn small--hide"
+  data-product-handle="{{ product.handle }}"
+>
+  {{ settings.quick_shop_text }}
+</button>
+        {% endif %}
       </div>
 
       {%- capture form_id -%}AddToCartForm-{{ product.handle }}-{{ product.id }}{%- endcapture -%}

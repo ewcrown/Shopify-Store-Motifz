@@ -17,9 +17,13 @@
 }
 
 #featured-collection-slider .modal {
-    top: 5%;
-    height: 600px;
-    overflow-y: auto;
+    /* top: 5%; */
+    /* height: 600px; */
+    /* overflow-y: auto; */
+    /* left: auto; */
+    /* right: auto; */
+    left: auto;
+    right: auto;
 }
 
 .grid-product__wrapper {
@@ -161,4 +165,101 @@
     #mf-subcollection-wrap .collection-item__title {
         font-size: 13px;
     }
+}
+
+.custom-quick-product__btn {
+    background-color: var(--colorBtnPrimary);
+    bottom: 10px;
+    color: var(--colorBtnPrimaryText);
+    cursor: pointer;
+    font-size: calc(var(--typeBaseSize)*.85);
+    left: 10px;
+    opacity: 0;
+    overflow: hidden;
+    padding: 8px 5px;
+    position: absolute;
+    right: 10px;
+    text-align: center;
+    transform: translateY(5px);
+    transition: opacity .25s ease, transform .25s ease-out, background .4s ease;
+    width: calc(100% - 20px);
+    z-index: 2;
+}
+
+.custom-grid-product__has-quick-shop:hover .custom-quick-product__btn {
+    opacity: 1;
+}
+
+/* hidden by default */
+#quickview-modal[aria-hidden="true"] {
+    display: none;
+}
+
+/* shell */
+.qv-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+}
+
+.qv-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .5);
+}
+
+.qv-panel {
+    position: relative;
+    box-sizing: border-box;
+    margin: 5vh auto;
+    width: min(92vw, 1200px);
+    max-height: 90vh;
+    overflow: auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+}
+
+.qv-content {
+    padding: 20px;
+}
+
+/* close */
+.qv-x {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 36px;
+    height: 36px;
+    border: 0;
+    border-radius: 999px;
+    background: #f2f2f2;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+/* small screens full-bleed */
+@media (max-width: 640px) {
+    .qv-panel {
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+        max-height: none;
+        border-radius: 0;
+    }
+
+    .qv-content {
+        padding: 16px;
+    }
+}
+
+/* body lock when open */
+.qv-lock {
+    overflow: hidden;
+}
+
+.qv-content [data-section-type="header"],
+.qv-content [data-section-type="footer-section"] {
+    display: none;
 }
