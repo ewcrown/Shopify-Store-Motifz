@@ -195,12 +195,11 @@ Arguments
               {{ product.title }}
             </div>
             <div class="grid-product-cart-form">
-              {%- render 'product-form',
-                form_id: form_id,
-                product: product,
-                show_dynamic_checkout: false,
-                current_variant: current_variant,
-              -%}
+              <button type="submit" name="add" data-add-to-cart="" class="btn btn--full add-to-cart" data-id="{{ current_variant.id }}">
+                <span data-add-to-cart-text="" data-default-text="Add to cart">
+                  Add to cart
+                </span>
+              </button>
             </div>
           </div>
           {%- if settings.vendor_enable -%}

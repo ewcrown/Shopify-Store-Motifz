@@ -12,6 +12,7 @@
   data-section-type="collection-grid"
 >
   <div id="CollectionAjaxContent">
+
     <div class="page-width">
       <div class="grid">
         <div class="grid__item medium-up--one-fifth grid__item--sidebar">
@@ -45,7 +46,14 @@
                 {%- endif -%}
               {%- when 'subcollections' -%}
                 {%- if paginate.current_page == 1 and current_filter_size == 0 -%}
-                  {%- render 'subcollections', per_row: block.settings.subcollections_per_row -%}
+                  <div id="mf-subcollection-wrap">
+                    <div class="mf-collection-title">
+                      <h1>{{ collection.title }}</h1>
+                    </div>
+                    <div class="mf-subcollection-scroller">
+                      {%- render 'subcollections', per_row: section.settings.subcollections_per_row -%}
+                    </div>
+                  </div>
                 {%- endif -%}
               {%- when 'product_grid' -%}
                 <div data-scroll-to>

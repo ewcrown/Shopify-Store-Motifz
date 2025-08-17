@@ -410,63 +410,57 @@
       sliderContainer.style.display = 'block';
       
       // Initialize Swiper
-      const swiper = new Swiper(sliderContainer, {
-        // Responsive breakpoints
-        breakpoints: {
-          // Mobile: 1.7 slides
-          320: {
-            slidesPerView: 1.7,
-            spaceBetween: 20,
-            centeredSlides: true,
-          },
-          // Tablet: 2.5 slides
-          768: {
-            slidesPerView: 2.5,
-            spaceBetween: 25,
-          },
-          // Desktop: 4 slides
-          1024: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-          }
-        },
-        
-        // Optional parameters
-        loop: {% if section.settings.enable_loop %}true{% else %}false{% endif %},
-        autoplay: {% if section.settings.enable_autoplay %}{
-          delay: {{ section.settings.autoplay_speed | times: 1000 }},
-          disableOnInteraction: false,
-        }{% else %}false{% endif %},
-        grabCursor: true,
-        effect: 'slide',
-        
-        // Navigation
-        navigation: {
-          nextEl: '.featured-collection-swiper-button-next',
-          prevEl: '.featured-collection-swiper-button-prev',
-        },
-        
-        // Pagination
-        pagination: {
-          el: '.featured-collection-swiper-pagination',
-          clickable: true,
-          dynamicBullets: true,
-        },
-        
-        // Touch and mouse events
-        touchEventsTarget: 'container',
-        simulateTouch: true,
-        
-        // Performance optimizations
-        watchSlidesProgress: true,
-        watchSlidesVisibility: true,
-        
-        // Responsive behavior
-        observer: true,
-        observeParents: true,
-        observeSlideChildren: true,
-      });
-      
+      // Initialize Swiper
+const swiper = new Swiper(sliderContainer, {
+  // Base (mobile-first) config
+  slidesPerView: 1.1,
+  spaceBetween: 16,
+    centeredSlides: true,
+
+
+  // Responsive breakpoints (min-width)
+  breakpoints: {
+    480: {               // small phones -> slightly wider
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {               // tablet
+      slidesPerView: 2.5,
+      spaceBetween: 25,
+    },
+    1024: {              // desktop
+      slidesPerView: 4,  // your comment said 4; previous code used 3
+      spaceBetween: 30,
+    }
+  },
+
+  loop: {% if section.settings.enable_loop %}true{% else %}false{% endif %},
+  autoplay: {% if section.settings.enable_autoplay %}{
+    delay: {{ section.settings.autoplay_speed | times: 1000 }},
+    disableOnInteraction: false,
+  }{% else %}false{% endif %},
+  grabCursor: true,
+  effect: 'slide',
+
+  // Scope controls to THIS section to avoid cross-instance conflicts
+  navigation: {% if section.settings.show_arrows %}{
+    nextEl: sliderSection.querySelector('.featured-collection-swiper-button-next'),
+    prevEl: sliderSection.querySelector('.featured-collection-swiper-button-prev'),
+  }{% else %}false{% endif %},
+  pagination: {% if section.settings.show_dots %}{
+    el: sliderSection.querySelector('.featured-collection-swiper-pagination'),
+    clickable: true,
+    dynamicBullets: true,
+  }{% else %}false{% endif %},
+
+  touchEventsTarget: 'container',
+  simulateTouch: true,
+  watchSlidesProgress: true,
+  watchSlidesVisibility: true,
+  observer: true,
+  observeParents: true,
+  observeSlideChildren: true,
+});
       // Add fade-in effect after initialization
       setTimeout(() => {
         sliderSection.classList.add('loaded');
