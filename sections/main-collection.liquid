@@ -46,14 +46,18 @@
                 {%- endif -%}
               {%- when 'subcollections' -%}
                 {%- if paginate.current_page == 1 and current_filter_size == 0 -%}
-                  <div id="mf-subcollection-wrap">
-                    <div class="mf-collection-title">
-                      <h1>{{ collection.title }}</h1>
-                    </div>
-                    <div class="mf-subcollection-scroller">
-                      {%- render 'subcollections', per_row: section.settings.subcollections_per_row -%}
-                    </div>
-                  </div>
+                  {% for link in linklists.main-menu-new-theme.links %}
+                    {% if link.active and link.levels > 0 %}
+                      <div id="mf-subcollection-wrap">
+                        <div class="mf-collection-title">
+                          <h1>{{ collection.title }}</h1>
+                        </div>
+                        <div class="mf-subcollection-scroller">
+                          {%- render 'subcollections', per_row: section.settings.subcollections_per_row -%}
+                        </div>
+                      </div>
+                    {%- endif -%}
+                  {% endfor %}
                 {%- endif -%}
               {%- when 'product_grid' -%}
                 <div data-scroll-to>

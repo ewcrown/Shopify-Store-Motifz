@@ -92,6 +92,7 @@
     grid-template-columns: 20% 80%;
     align-items: center;
     margin-bottom: 50px;
+    gap: 20px;
 }
 
 .mf-subcollection-scroller {
@@ -146,10 +147,6 @@
         grid-template-columns: 1fr;
         margin-bottom: 30px;
         text-align: center;
-    }
-
-    .mf-collection-title {
-        margin-bottom: 20px;
     }
 
     .mf-subcollection-scroller>.grid {
