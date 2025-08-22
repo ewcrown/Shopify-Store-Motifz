@@ -53,13 +53,14 @@
         ></div>
       </noscript>
     {%- endif -%}
-
+  </a>
+   <a href="{{ collection.url }}" class="collection-item-text-link">
     <span
-      class="collection-item__title collection-item__title--{{ settings.collection_grid_style }} collection-item__title--{{ settings.type_collection_font }} collection-item__title--{{ settings.collection_grid_text_align }}"
-    >
+      class="collection-item__title collection-item__title--{{ settings.collection_grid_style }} collection-item__title--{{ settings.type_collection_font }} collection-item__title--{{ settings.collection_grid_text_align }}">
       <span>
         {{ title_output }}
       </span>
     </span>
-  </a>
+      </a>
+
 </div>

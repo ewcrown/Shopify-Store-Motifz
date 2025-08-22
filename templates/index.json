@@ -25,6 +25,8 @@
             "link_text_2": "",
             "color_accent": "#321004",
             "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/Website_Banner_2cd2538d-7ba3-484e-8db1-388ac7ded9e4.jpg",
+            "image_mobile": "shopify://shop_images/Mobile_Banner_7b35d536-5702-45df-8782-507380748977.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 0
           }
@@ -42,23 +44,8 @@
             "link_text_2": "",
             "color_accent": "#6b3f21",
             "text_align": "vertical-center horizontal-center",
-            "parallax_direction": "top",
-            "overlay_opacity": 0
-          }
-        },
-        "image-3": {
-          "type": "image",
-          "settings": {
-            "top_subheading": "",
-            "title": "Luxette's STYLE",
-            "title_size": 63,
-            "subheading": "Fresh looks for sunny days.",
-            "link": "",
-            "link_text": "Optional button",
-            "link_2": "",
-            "link_text_2": "Shop all",
-            "color_accent": "#8b4e40",
-            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/Artboard_1_copy_7_8de4a7a7-6668-4991-85bd-1fa96af49288.jpg",
+            "image_mobile": "shopify://shop_images/MWU05247_Resize.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 0
           }
@@ -66,8 +53,7 @@
       },
       "block_order": [
         "image-1",
-        "image-2",
-        "image-3"
+        "image-2"
       ],
       "settings": {
         "section_height": "100vh",
@@ -213,23 +199,6 @@
         "image_display": "contain"
       }
     },
-    "background_image_text_VNybzb": {
-      "type": "background-image-text",
-      "name": "t:sections.background-image-text.presets.large_image_with_text_box.name",
-      "settings": {
-        "subtitle": "",
-        "title": "",
-        "text": "",
-        "button_label": "",
-        "button_link": "",
-        "layout": "left",
-        "height": 550,
-        "framed": false,
-        "parallax": true,
-        "parallax_direction": "top",
-        "lazyload_images": true
-      }
-    },
     "collection_slider_Bte4nb": {
       "type": "collection-slider",
       "settings": {
@@ -249,6 +218,24 @@
         "savings_text_color": "#ff4757",
         "card_style": "rounded",
         "image_display": "contain"
+      }
+    },
+    "background_image_text_aUWbb7": {
+      "type": "background-image-text",
+      "name": "t:sections.background-image-text.presets.large_image_with_text_box.name",
+      "settings": {
+        "subtitle": "",
+        "title": "",
+        "text": "",
+        "button_label": "",
+        "button_link": "",
+        "image": "shopify://shop_images/Artboard_1_copy_9.jpg",
+        "layout": "left",
+        "height": 550,
+        "framed": false,
+        "parallax": true,
+        "parallax_direction": "top",
+        "lazyload_images": true
       }
     },
     "product_story_sections_KNazdq": {
@@ -351,8 +338,8 @@
     "slideshow",
     "featured_collections_H7qKtY",
     "featured-collection",
-    "background_image_text_VNybzb",
     "collection_slider_Bte4nb",
+    "background_image_text_aUWbb7",
     "product_story_sections_KNazdq"
   ]
 }

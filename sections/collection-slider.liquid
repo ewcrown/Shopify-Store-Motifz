@@ -121,7 +121,6 @@
   
   .featured-collection-swiper {
     width: 100%;
-    padding: 0 60px;
     position: relative;
     opacity: 0;
     transition: opacity 0.5s ease;
@@ -320,10 +319,6 @@
   }
   
   @media (max-width: 768px) {
-    .featured-collection-swiper {
-      padding: 0 40px;
-    }
-    
     .featured-collection-swiper-button-next,
     .featured-collection-swiper-button-prev {
       width: 40px;
@@ -349,9 +344,6 @@
   }
   
   @media (max-width: 480px) {
-    .featured-collection-swiper {
-      padding: 0 30px;
-    }
     
     .featured-collection-swiper-button-next,
     .featured-collection-swiper-button-prev {
@@ -413,11 +405,8 @@
       // Initialize Swiper
 const swiper = new Swiper(sliderContainer, {
   // Base (mobile-first) config
-  slidesPerView: 1.1,
+  slidesPerView: 1,
   spaceBetween: 16,
-    centeredSlides: true,
-
-
   // Responsive breakpoints (min-width)
   breakpoints: {
     480: {               // small phones -> slightly wider
@@ -425,7 +414,7 @@ const swiper = new Swiper(sliderContainer, {
       spaceBetween: 20,
     },
     768: {               // tablet
-      slidesPerView: 2.5,
+      slidesPerView: 2,
       spaceBetween: 25,
     },
     1024: {              // desktop

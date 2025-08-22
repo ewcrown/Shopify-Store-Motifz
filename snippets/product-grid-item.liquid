@@ -202,7 +202,7 @@ Arguments
         <div class="grid-product__meta">
           <div class="grid-product__wrapper">
             <div class="grid-product__title grid-product__title--{{ settings.type_product_style }}">
-              {{ product.title | truncate: 30 }}
+              {{ product.title }}
             </div>
             <div class="grid-product-cart-form">
               <button type="submit" name="add" data-add-to-cart="" class="btn btn--full add-to-cart" data-id="{{ current_variant.id }}">
