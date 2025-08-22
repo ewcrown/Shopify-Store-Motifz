@@ -7,7 +7,7 @@
 {% endcapture %}
 {%- if is_tab -%}
   {% assign title = 'products.product.description' | t %}
-  {%- render 'tab', id: id, title: title, content: description -%}
+  {%- render 'tab', id: id, title: title, content: description, product:product -%}
 {%- else -%}
   <div class="rte">
     {{ description }}

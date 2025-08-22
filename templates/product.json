@@ -49,6 +49,10 @@
             "inventory_transfers_enable": true
           }
         },
+        "quantity_selector_rcXgzK": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -57,13 +61,15 @@
             "show_gift_card_recipient": false
           }
         },
-        "description": {
-          "type": "description",
+        "tab": {
+          "type": "tab",
           "settings": {
-            "is_tab": false
+            "title": "Description",
+            "content": "",
+            "page": ""
           }
         },
-        "tab": {
+        "tab_Fyqrrg": {
           "type": "tab",
           "settings": {
             "title": "Shipping information",
@@ -83,9 +89,10 @@
         "variant_picker",
         "sales_point",
         "inventory_status",
+        "quantity_selector_rcXgzK",
         "buy_buttons",
-        "description",
         "tab",
+        "tab_Fyqrrg",
         "share"
       ],
       "settings": {
@@ -104,7 +111,9 @@
     "sub": {
       "type": "product-full-width",
       "disabled": true,
-      "settings": {}
+      "settings": {
+        "max_width": true
+      }
     },
     "background-image-text": {
       "type": "background-image-text",
@@ -113,17 +122,33 @@
         "title": "Made in California",
         "text": "<p>We've always believed in the power of locally made goods. The quality of the craftsmanship and the local artisans we employ are what make Luxette our mission in life.</p>",
         "button_label": "",
-        "layout": "right"
+        "button_link": "",
+        "layout": "right",
+        "height": 550,
+        "framed": false,
+        "parallax": true,
+        "parallax_direction": "top",
+        "lazyload_images": true
       }
     },
     "text-and-image": {
       "type": "text-and-image",
       "settings": {
+        "image_mask": "none",
+        "image2_mask": "none",
         "subtitle": "Every time",
         "title": "Perfectly tailored",
         "text": "<p>Tailored to fit right every time. Use our handy size guide to choose the right size and if it ever doesn't fit, just return it and we'll pay the postage.</p>",
         "button_label": "",
-        "image_width": "66"
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "66",
+        "layout": "right",
+        "divider": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
       }
     },
     "testimonials": {
@@ -132,6 +157,7 @@
         "testimonial-1": {
           "type": "testimonial",
           "settings": {
+            "icon": "5-stars",
             "testimonial": "<p>Couldn't be happier with the service I received from this company.</p>",
             "author": "Leslie M.",
             "author_info": "Toronto, ON"
@@ -140,13 +166,16 @@
         "testimonial-2": {
           "type": "testimonial",
           "settings": {
+            "icon": "5-stars",
             "testimonial": "<p>Really went out of their way to make me feel special as a customer, highly recommend!</p>",
-            "author": "Rachel F."
+            "author": "Rachel F.",
+            "author_info": "Los Angeles, CA"
           }
         },
         "testimonial-3": {
           "type": "testimonial",
           "settings": {
+            "icon": "5-stars",
             "testimonial": "<p>Fantastic fabrics, great fit and no issues going through the laundry either!</p>",
             "author": "Sam R.",
             "author_info": "Brooklyn, NY"
@@ -155,6 +184,7 @@
         "testimonial-4": {
           "type": "testimonial",
           "settings": {
+            "icon": "5-stars",
             "testimonial": "<p>Arrived fast and beautifully boxed. They even let me model on their site :)</p>",
             "author": "Sharon S.",
             "author_info": "New Orleans, LA"
@@ -163,6 +193,7 @@
         "testimonial-5": {
           "type": "testimonial",
           "settings": {
+            "icon": "5-stars",
             "testimonial": "<p>Couldn't be happier with the service I received from this company.</p>",
             "author": "Matt C.",
             "author_info": "Montreal, QC"
@@ -178,30 +209,45 @@
       ],
       "settings": {
         "title": "Hear it from them",
-        "color_background": "#e4eaee"
+        "align_text": "center",
+        "round_images": true,
+        "color_background": "#e4eaee",
+        "color_text": "#1c1d1d"
       }
     },
     "text-and-image-2": {
       "type": "text-and-image",
       "settings": {
+        "image_mask": "none",
+        "image2_mask": "none",
         "subtitle": "Soft, breezy",
         "title": "Lightweight fabric",
         "text": "<p>Keep cool this summer with our lightweight Egyptian cotton-polyester blend, the softest shirts on the beach.</p>",
         "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
         "image_width": "66",
-        "layout": "left"
+        "layout": "left",
+        "divider": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
       }
     },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
+        "product_recommendations_heading": "You may also like",
         "related_count": 5,
         "products_per_row": 5
       }
     },
     "recently-viewed": {
       "type": "recently-viewed",
-      "settings": {}
+      "settings": {
+        "recent_count": 5
+      }
     },
     "countdown": {
       "type": "countdown",
@@ -219,13 +265,20 @@
           "type": "timer",
           "settings": {
             "year": "2023",
+            "month": "01",
+            "day": "1",
+            "hour": "03",
+            "minute": "00",
+            "hide_timer": false,
             "text": ""
           }
         },
         "button": {
           "type": "button",
           "settings": {
-            "button": "Shop Now"
+            "button_link": "",
+            "button": "Shop Now",
+            "button_style": "solid"
           }
         }
       },
@@ -236,10 +289,12 @@
       ],
       "settings": {
         "layout": "hero",
+        "full_width": false,
         "text_color": "#ffffff",
         "background_color": "#f9e8e0",
         "overlay_color": "#000000",
-        "overlay_opacity": 30
+        "overlay_opacity": 30,
+        "lazyload_images": true
       }
     },
     "collection-return": {
@@ -249,7 +304,10 @@
     "apps": {
       "type": "apps",
       "disabled": true,
-      "settings": {}
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
     }
   },
   "order": [

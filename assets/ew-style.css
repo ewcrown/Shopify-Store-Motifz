@@ -42,12 +42,17 @@
     letter-spacing: 0;
     text-transform: unset;
     font-size: 12px;
-    min-width: 135px;
+    min-width: 50px;
     display: block;
+    padding: 5px;
 }
 
 .grid-product__meta .grid-product__price {
-    text-align: right;
+    text-align: left;
+}
+
+.pswp__ui {
+    display: none;
 }
 
 .loader {
