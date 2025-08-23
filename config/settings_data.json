@@ -64,7 +64,14 @@
     "checkout_logo_position": "left",
     "checkout_logo_size": "small",
     "checkout_sidebar_background_color": "#fafafa",
-    "content_for_index": []
+    "content_for_index": [],
+    "blocks": {
+      "11651401770006824842": {
+        "type": "shopify://apps/ymq-product-options-variants/blocks/app-embed/86b91121-1f62-4e27-9812-b70a823eb918",
+        "disabled": false,
+        "settings": {}
+      }
+    }
   },
   "installed_preset_name": "Impulse",
   "presets": {

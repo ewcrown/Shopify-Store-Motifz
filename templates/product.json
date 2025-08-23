@@ -49,6 +49,12 @@
             "inventory_transfers_enable": true
           }
         },
+        "ymq_product_options_variants_option_Rphgm8": {
+          "type": "shopify://apps/ymq-product-options-variants/blocks/option/86b91121-1f62-4e27-9812-b70a823eb918",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
         "quantity_selector_rcXgzK": {
           "type": "quantity_selector",
           "settings": {}
@@ -89,6 +95,7 @@
         "variant_picker",
         "sales_point",
         "inventory_status",
+        "ymq_product_options_variants_option_Rphgm8",
         "quantity_selector_rcXgzK",
         "buy_buttons",
         "tab",
@@ -117,6 +124,7 @@
     },
     "background-image-text": {
       "type": "background-image-text",
+      "disabled": true,
       "settings": {
         "subtitle": "locally crafted",
         "title": "Made in California",
@@ -133,6 +141,7 @@
     },
     "text-and-image": {
       "type": "text-and-image",
+      "disabled": true,
       "settings": {
         "image_mask": "none",
         "image2_mask": "none",
@@ -207,6 +216,7 @@
         "testimonial-4",
         "testimonial-5"
       ],
+      "disabled": true,
       "settings": {
         "title": "Hear it from them",
         "align_text": "center",
@@ -217,6 +227,7 @@
     },
     "text-and-image-2": {
       "type": "text-and-image",
+      "disabled": true,
       "settings": {
         "image_mask": "none",
         "image2_mask": "none",
@@ -287,6 +298,7 @@
         "timer",
         "button"
       ],
+      "disabled": true,
       "settings": {
         "layout": "hero",
         "full_width": false,
@@ -299,6 +311,7 @@
     },
     "collection-return": {
       "type": "collection-return",
+      "disabled": true,
       "settings": {}
     },
     "apps": {
