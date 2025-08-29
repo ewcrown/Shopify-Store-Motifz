@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const buttons = document.querySelectorAll('.add-to-cart');
+  const buttons = document.querySelectorAll('.grid-product__content .add-to-cart');
 
   buttons.forEach((button) => {
     button.addEventListener('click', async (e) => {

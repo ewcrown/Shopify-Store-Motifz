@@ -300,12 +300,12 @@
     padding-bottom: 75px;
 }
 
-.add-to-cart.btn--secondary:hover {
+.grid-product__content .add-to-cart.btn--secondary:hover {
     background: #fff;
     color: #000;
 }
 
-.add-to-cart.btn--secondary {
+.grid-product__content .add-to-cart.btn--secondary {
     border-color: #000;
     background: #000;
     color: #fff;
