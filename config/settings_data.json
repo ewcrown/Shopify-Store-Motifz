@@ -50,6 +50,8 @@
     "collection_grid_shape": "square",
     "collection_grid_image": "collection",
     "collection_grid_opacity": 12,
+    "cart_icon": "bag-minimal",
+    "cart_additional_buttons": true,
     "social_facebook_link": "https://web.facebook.com/motifzclothing/",
     "social_twitter_link": "https://x.com/Motifzclothing",
     "social_pinterest_link": "https://www.pinterest.com/motifzonline/",
