@@ -180,7 +180,7 @@
                     {% else %}
                       {% assign desktop_classes = 'hero__image hero__image--' | append: block.id %}
                     {% endif %}
-
+                    <a href="{{ block.settings.link }}">
                     {%- render 'image-element',
                       img: block.settings.image,
                       img_width: 2400,
@@ -198,6 +198,7 @@
                         classes: mobile_classes,
                       -%}
                     {%- endif -%}
+                    </a>
 
                   {%- else -%}
                     {%- if template == 'password' -%}
@@ -348,6 +349,22 @@
         {
           "label": "t:sections.slideshow.settings.mobile_height.options.500px.label",
           "value": "500px"
+        },
+        {
+          "label": "600px",
+          "value": "600px"
+        },
+        {
+          "label": "650px",
+          "value": "650px"
+        },
+        {
+          "label": "700px",
+          "value": "700px"
+        },
+        {
+          "label": "750px",
+          "value": "750px"
         },
         {
           "label": "t:sections.slideshow.settings.mobile_height.options.100vh.label",

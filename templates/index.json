@@ -16,49 +16,29 @@
           "type": "image",
           "settings": {
             "top_subheading": "",
-            "title": "Fall\nessentials",
+            "title": "Clearance \nCraze",
             "title_size": 64,
-            "subheading": "Celebrate joyful moments with the House's emblematic pieces.",
-            "link": "",
-            "link_text": "Shop all",
+            "subheading": "Grab Your Picks Before They’re Gone ⏳",
+            "link": "shopify://collections/sales",
+            "link_text": "Shop & Save Big",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "#321004",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify://shop_images/Website_Banner_2cd2538d-7ba3-484e-8db1-388ac7ded9e4.jpg",
-            "image_mobile": "shopify://shop_images/Mobile_Banner_7b35d536-5702-45df-8782-507380748977.jpg",
-            "parallax_direction": "top",
-            "overlay_opacity": 0
-          }
-        },
-        "image-2": {
-          "type": "image",
-          "settings": {
-            "top_subheading": "",
-            "title": "Inspired\nby Nature",
-            "title_size": 69,
-            "subheading": "",
-            "link": "",
-            "link_text": "Shop Now",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "#6b3f21",
-            "text_align": "vertical-center horizontal-center",
-            "image": "shopify://shop_images/Artboard_1_copy_7_8de4a7a7-6668-4991-85bd-1fa96af49288.jpg",
-            "image_mobile": "shopify://shop_images/MWU05247_Resize.jpg",
+            "image": "shopify://shop_images/Main_Banner.jpg",
+            "image_mobile": "shopify://shop_images/Mobile_Banner_1f55b129-9eb8-40c1-91d0-51f7c00b15a3.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 0
           }
         }
       },
       "block_order": [
-        "image-1",
-        "image-2"
+        "image-1"
       ],
       "settings": {
         "section_height": "100vh",
-        "mobile_height": "100vh",
-        "parallax": true,
+        "mobile_height": "700px",
+        "parallax": false,
         "style": "bars",
         "autoplay": true,
         "autoplay_speed": 5,
@@ -181,7 +161,7 @@
     "featured-collection": {
       "type": "collection-slider",
       "settings": {
-        "title": "Popular Picks",
+        "title": "PRET",
         "collection": "pret",
         "max_products": 12,
         "autoplay_speed": 8,
@@ -189,27 +169,6 @@
         "show_dots": true,
         "enable_loop": true,
         "enable_autoplay": false,
-        "show_sale_badge": true,
-        "show_product_code": true,
-        "show_savings": true,
-        "show_view_all": true,
-        "sale_badge_color": "#ff4757",
-        "savings_text_color": "#ff4757",
-        "card_style": "rounded",
-        "image_display": "contain"
-      }
-    },
-    "collection_slider_Bte4nb": {
-      "type": "collection-slider",
-      "settings": {
-        "title": "Popular Picks",
-        "collection": "amal-lawn",
-        "max_products": 12,
-        "autoplay_speed": 4,
-        "show_arrows": true,
-        "show_dots": true,
-        "enable_loop": true,
-        "enable_autoplay": true,
         "show_sale_badge": true,
         "show_product_code": true,
         "show_savings": true,
@@ -228,14 +187,36 @@
         "title": "",
         "text": "",
         "button_label": "",
-        "button_link": "",
-        "image": "shopify://shop_images/Artboard_1_copy_9.jpg",
+        "button_link": "shopify://collections/sales",
+        "image": "shopify://shop_images/Banner2.jpg",
+        "mobile_image": "shopify://shop_images/Mobile_Banner_1f55b129-9eb8-40c1-91d0-51f7c00b15a3.jpg",
         "layout": "left",
-        "height": 550,
+        "height": 650,
         "framed": false,
-        "parallax": true,
+        "parallax": false,
         "parallax_direction": "top",
         "lazyload_images": true
+      }
+    },
+    "collection_slider_Bte4nb": {
+      "type": "collection-slider",
+      "settings": {
+        "title": "NEW ARRIVAL",
+        "collection": "new-arrival",
+        "max_products": 12,
+        "autoplay_speed": 4,
+        "show_arrows": true,
+        "show_dots": true,
+        "enable_loop": true,
+        "enable_autoplay": true,
+        "show_sale_badge": true,
+        "show_product_code": true,
+        "show_savings": true,
+        "show_view_all": true,
+        "sale_badge_color": "#ff4757",
+        "savings_text_color": "#ff4757",
+        "card_style": "rounded",
+        "image_display": "contain"
       }
     },
     "product_story_sections_KNazdq": {
@@ -338,8 +319,8 @@
     "slideshow",
     "featured_collections_H7qKtY",
     "featured-collection",
-    "collection_slider_Bte4nb",
     "background_image_text_aUWbb7",
+    "collection_slider_Bte4nb",
     "product_story_sections_KNazdq"
   ]
 }

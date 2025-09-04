@@ -11,8 +11,9 @@
         <div class="parallax-image" data-movement="15%" data-parallax-image data-angle="{{ section.settings.parallax_direction }}">
     {%- endif -%}
 
+      <a href="{{ section.settings.button_link }}">
       {%- if section.settings.image != blank -%}
-          {% assign classes = 'image-fit background-media-text__image background-media-text__image--' | append: section.id %}
+          {% assign classes = 'ew-desktop-fit image-fit background-media-text__image background-media-text__image--' | append: section.id %}
           {% comment %} Full width image so don't need to adjust sizes attribute, fallback is 100vw {% endcomment %}
           {%- render 'image-element',
             img: section.settings.image,
@@ -20,9 +21,18 @@
             loading: section.settings.lazyload_images,
             classes: classes,
           -%}
+          
+          {% assign classes2 = 'ew-mobile-fit image-fit background-media-text__image background-media-text__image--' | append: section.id %}
+          {%- render 'image-element',
+            img: section.settings.mobile_image,
+            img_width: 375,
+            loading: section.settings.lazyload_images,
+            classes: classes2,
+          -%}
       {%- else -%}
         {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}
       {%- endif -%}
+      </a>
 
     {%- if section.settings.parallax -%}
         </div>
@@ -96,6 +106,11 @@
       "type": "image_picker",
       "id": "image",
       "label": "t:sections.background-image-text.settings.image.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Mobile Image"
     },
     {
       "type": "select",

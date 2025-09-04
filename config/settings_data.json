@@ -58,6 +58,7 @@
     "social_instagram_link": "https://www.instagram.com/motifzclothing/",
     "social_tiktok_link": "https://www.tiktok.com/@motifzofficial",
     "social_youtube_link": "https://www.youtube.com/@MotifzPkr",
+    "favicon": "shopify://shop_images/M-01_32x32_cb52153d-7c9a-45db-ad84-8fcf9e58195f.png",
     "checkout_accent_color": "#111111",
     "checkout_body_background_color": "#ffffff",
     "checkout_button_color": "#111111",
@@ -70,6 +71,11 @@
     "blocks": {
       "11651401770006824842": {
         "type": "shopify://apps/ymq-product-options-variants/blocks/app-embed/86b91121-1f62-4e27-9812-b70a823eb918",
+        "disabled": false,
+        "settings": {}
+      },
+      "pagefly-page-builder": {
+        "type": "shopify://apps/pagefly-page-builder/blocks/app-embed/83e179f7-59a0-4589-8c66-c0dddf959200",
         "disabled": false,
         "settings": {}
       }

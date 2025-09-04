@@ -11,6 +11,50 @@
   "type": "footer",
   "name": "t:sections.footer-group.name",
   "sections": {
+    "newsletter_L7KcTJ": {
+      "type": "newsletter",
+      "blocks": {
+        "title_VfDbjr": {
+          "type": "title",
+          "settings": {
+            "title": "STAY IN TOUCH",
+            "heading_size": "h2"
+          }
+        },
+        "text_rGMPCC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Sign up to our newsletter and be the first to know about exclusive offers, product launches and more.</p>"
+          }
+        },
+        "form_ANJrzn": {
+          "type": "form",
+          "settings": {}
+        },
+        "share_buttons_9BTWBH": {
+          "type": "share_buttons",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title_VfDbjr",
+        "text_rGMPCC",
+        "form_ANJrzn",
+        "share_buttons_9BTWBH"
+      ],
+      "name": "t:sections.newsletter.presets.email_signup.name",
+      "settings": {
+        "align_text": "center",
+        "image_width": "33",
+        "image_mask": "none",
+        "image_position": "right",
+        "color_background": "#f9f9f9",
+        "color_text": "#1c1d1d",
+        "top_padding": true,
+        "bottom_padding": true
+      }
+    },
     "footer-promotions": {
       "type": "footer-promotions",
       "blocks": {
@@ -61,45 +105,55 @@
     "footer": {
       "type": "footer",
       "blocks": {
+        "custom_CYxBnQ": {
+          "type": "custom",
+          "settings": {
+            "show_footer_title": true,
+            "title": "Contact Us",
+            "text": "<p><strong>Motifz Head Office</strong><br/>19 Km Off Ferozpur Road Lahore</p><p>UAN: <a href=\"tel:+92(0)42-111-668-439\" target=\"_blank\" title=\"tel:+92(0)42-111-668-439\">+92(0)42-111-668-439</a></p><p>Wa: <a href=\"https://web.whatsapp.com/send?phone=92042111668439\" target=\"_blank\" title=\"https://web.whatsapp.com/send?phone=92042111668439\">+92(0)42-111-668-439</a></p>",
+            "container_width": 25
+          }
+        },
+        "custom_CJrFtj": {
+          "type": "custom",
+          "settings": {
+            "show_footer_title": true,
+            "title": "RESELLERS",
+            "text": "<p>For Franchise Dial<br/><a href=\"https://web.whatsapp.com/send?phone=923477702601\" target=\"_blank\" title=\"https://web.whatsapp.com/send?phone=923477702601\">+92-330-0118260</a></p><p>For Wholesale Dial<br/><a href=\"https://web.whatsapp.com/send?phone=923422222253\" target=\"_blank\" title=\"https://web.whatsapp.com/send?phone=923422222253\">+92-342-2222253</a></p>",
+            "container_width": 18
+          }
+        },
         "menu-1": {
           "type": "menu",
           "settings": {
-            "show_footer_title": false,
-            "menu": "main-menu",
-            "container_width": 20
+            "show_footer_title": true,
+            "menu": "customer-services",
+            "container_width": 22
           }
         },
         "menu-2": {
           "type": "menu",
           "settings": {
-            "show_footer_title": false,
+            "show_footer_title": true,
             "menu": "footer",
-            "container_width": 20
+            "container_width": 16
           }
         },
         "menu-3": {
           "type": "menu",
           "settings": {
-            "show_footer_title": false,
-            "menu": "footer",
-            "container_width": 20
-          }
-        },
-        "newsletter": {
-          "type": "newsletter",
-          "settings": {
-            "show_footer_title": false,
-            "title": "Sign up and save",
-            "text": "<p>Be the first to know about our biggest and best sales. We'll never send more than one email a month.</p>",
-            "container_width": 33
+            "show_footer_title": true,
+            "menu": "company-policies",
+            "container_width": 15
           }
         }
       },
       "block_order": [
+        "custom_CYxBnQ",
+        "custom_CJrFtj",
         "menu-1",
         "menu-2",
-        "menu-3",
-        "newsletter"
+        "menu-3"
       ],
       "settings": {
         "show_locale_selector": true,
@@ -112,6 +166,7 @@
     }
   },
   "order": [
+    "newsletter_L7KcTJ",
     "footer-promotions",
     "footer"
   ]
