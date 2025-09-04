@@ -66,6 +66,9 @@
           {% endif %}
 
           <div class="cart__checkout-wrapper">
+            <a href="{{ routes.all_products_collection_url }}" class="btn cart__continue-shopping">
+              Continue Shopping
+            </a>
             <button type="submit" name="checkout" data-terms-required="{{ settings.cart_terms_conditions_enable }}" class="btn cart__checkout">
               {{ 'cart.general.checkout' | t }}
             </button>

@@ -143,5 +143,87 @@
 
   {{ 'ew-custom.js' | asset_url | script_tag }}
 
+  <script>
+      function getHistory(orderId) {
+        var numbers = /^[0-9]+$/;
+
+        if (!orderId) {
+          document.getElementById(
+            'insertpoint'
+          ).innerHTML = `<h3 style="text-align: center;">Order Id cannot be empty.</h3>`;
+        } else if (!orderId.match(numbers)) {
+          document.getElementById(
+            'insertpoint'
+          ).innerHTML = `<h3 style="text-align: center;">Order Id should be number.</h3>`;
+        } else if (orderId > 2147483647) {
+          document.getElementById('insertpoint').innerHTML = `<h3 style="text-align: center;">Invalid Order Id!</h3>`;
+        } else {
+          document.getElementById('insertpoint').innerHTML = `<div class="loader" style="text-align: center;"></div>`;
+          const url = `https://tracktheorder.com/orderTracking/get-order?id=${orderId}`;
+          return fetch(url, {
+            method: 'GET',
+          })
+            .then((response) => response.json())
+            .then((res) => {
+              let dataText = '';
+              if (res.orderResponse.length > 0) {
+                if (res.orderResponse[0].message) {
+                  dataText += `<h3 style="text-align: center;">${res.orderResponse[0].message}</h3>`;
+                } else {
+                  dataText += `<h4 class="order-title-label">Order # ${orderId ?? 00000000}</h4>
+                  <table class="ord-table">
+                    <thead>
+                      <tr>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>`;
+
+                  for (let i in res.orderResponse) {
+                    let date = new Date(res.orderResponse[i].date);
+                    const month = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+                    dataText += `
+                    <tr>
+                      <td style="width: 12%">${date.getDate()} ${month[date.getMonth()]} ${date.getFullYear()}</td>
+                      <td style="width: 10%">${addZero(date.getHours())}:${addZero(date.getMinutes())}</td>
+                      <td>${titleCase(res.orderResponse[i].status)}</td>
+                    </tr>`;
+                  }
+
+                  dataText += `</tbody></table>`;
+                }
+              }
+              if (dataText.length < 1) {
+                dataText += `<h3 style="text-align: center;">${res.message}</h3>`;
+              }
+              document.getElementById('insertpoint').innerHTML = dataText;
+            })
+            .catch((error) => {
+              console.log('ERROR ', error);
+            });
+        }
+      }
+
+      function titleCase(str) {
+        var splitStr = str.toLowerCase().split(' ');
+        for (var i = 0; i < splitStr.length; i++) {
+          // You do not need to check if i is larger than splitStr length, as your for does that for you
+          // Assign it back to the array
+          splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1).toLowerCase();
+        }
+        // Directly return the joined string
+        return splitStr.join(' ');
+      }
+
+      function addZero(i) {
+        if (i < 10) {
+          i = '0' + i;
+        }
+        return i;
+      }
+    </script>
 </body>
 </html>

@@ -61,19 +61,29 @@
                 {%- endif -%}
               {%- when 'product_grid' -%}
                 <div data-scroll-to>
-                  {% render 'collection-grid',
-                    collection: collection,
-                    items: collection.products,
-                    enable_sidebar: section.settings.enable_sidebar,
-                    filter_style: section.settings.filter_style,
-                    enable_sort: section.settings.enable_sort,
-                    enable_collection_count: block.settings.enable_collection_count,
-                    per_row: block.settings.per_row,
-                    mobile_flush_grid: block.settings.mobile_flush_grid,
-                    quick_shop_enable: settings.quick_shop_enable
-                  %}
+                  <div id="product-grid" data-page="{{ paginate.current_page }}">
+                    {% render 'collection-grid',
+                      collection: collection,
+                      items: collection.products,
+                      enable_sidebar: section.settings.enable_sidebar,
+                      filter_style: section.settings.filter_style,
+                      enable_sort: section.settings.enable_sort,
+                      enable_collection_count: block.settings.enable_collection_count,
+                      per_row: block.settings.per_row,
+                      mobile_flush_grid: block.settings.mobile_flush_grid,
+                      quick_shop_enable: settings.quick_shop_enable
+                    %}
+                  </div>
+
                   {%- if paginate.pages > 1 -%}
-                    {%- render 'pagination', paginate: paginate -%}
+                    <!-- Keep pagination hidden so JS can read the next URL -->
+                    <div id="collection-pagination" style="display:none">
+                      {%- render 'pagination', paginate: paginate -%}
+                    </div>
+                    <div id="infinite-scroll-trigger" aria-hidden="true"></div>
+                    <div id="infinite-scroll-loading" style="display:none;text-align:center;padding:1rem;">
+                      Loading more products…
+                    </div>
                   {%- endif -%}
                 </div>
               {%- endcase -%}
@@ -97,6 +107,154 @@
   .grid__item--sidebar { position: static; overflow: hidden; }
 {% endstyle %}
 {%- endif -%}
+
+<style>
+  /* Ensure native pagination never flashes */
+  #collection-pagination { display: none !important; }
+  #infinite-scroll-loading { font-size: .9rem; }
+</style>
+
+<script>
+(function() {
+  const SEL = {
+    grid:     '#product-grid',
+    trigger:  '#infinite-scroll-trigger',
+    loading:  '#infinite-scroll-loading',
+    pagerBox: '#collection-pagination',
+    nextLink: '#collection-pagination .pagination .next a'
+  };
+
+  let observer;
+  let isLoading = false;
+
+  function getNextUrl(root = document) {
+    const a = root.querySelector(SEL.nextLink);
+    return a ? a.getAttribute('href') : null;
+  }
+
+  function showLoading(show) {
+    const el = document.querySelector(SEL.loading);
+    if (el) el.style.display = show ? '' : 'none';
+  }
+
+  function reinitAnimations(newNodes) {
+    // Lazysizes: make sure newly-added images start loading
+    if (window.lazySizes && newNodes && newNodes.length) {
+      // broad nudge: check all lazysizes elements
+      if (window.lazySizes.loader && typeof window.lazySizes.loader.checkElems === 'function') {
+        window.lazySizes.loader.checkElems();
+      }
+      // targeted update as fallback
+      newNodes.forEach(node => {
+        if (!node || !node.querySelectorAll) return;
+        const imgs = node.querySelectorAll('.lazyload, .lazyloading, .lazyloaded');
+        if (imgs.length && window.lazySizes.autoSizer && typeof window.lazySizes.autoSizer.updateElems === 'function') {
+          window.lazySizes.autoSizer.updateElems(imgs);
+        }
+      });
+    }
+
+    // AOS: refresh so elements like .aos-animate[data-aos="image-fade-in"] .image-element work on new content
+    if (window.AOS && typeof window.AOS.refreshHard === 'function') {
+      requestAnimationFrame(() => window.AOS.refreshHard());
+    } else if (window.AOS && typeof window.AOS.refresh === 'function') {
+      requestAnimationFrame(() => window.AOS.refresh());
+    } else if (window.AOS && typeof window.AOS.init === 'function') {
+      requestAnimationFrame(() => window.AOS.init());
+    }
+  }
+
+  async function loadNextPage(nextUrl) {
+    if (!nextUrl || isLoading) return;
+    isLoading = true;
+    showLoading(true);
+
+    try {
+      const res = await fetch(nextUrl, { credentials: 'same-origin' });
+      const html = await res.text();
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(html, 'text/html');
+
+      // Next page grid container
+      const nextGrid = doc.querySelector(SEL.grid);
+      if (!nextGrid) {
+        disconnect();
+        return;
+      }
+
+      // Append product tiles (Impulse typically uses .grid__item)
+      const currentGrid = document.querySelector(`${SEL.grid} .grid.grid--uniform`);
+      const items = nextGrid.querySelectorAll('.grid__item');
+
+      const appended = [];
+      items.forEach(node => {
+        currentGrid.appendChild(node);
+        appended.push(node);
+      });
+
+      // Update hidden pagination with the new "next" link
+      const currentPager = document.querySelector(SEL.pagerBox);
+      const nextPager = doc.querySelector(SEL.pagerBox);
+      if (currentPager && nextPager) currentPager.innerHTML = nextPager.innerHTML;
+
+      // Re-init AOS & lazySizes for newly-added nodes
+      reinitAnimations(appended);
+
+      // If no more pages, stop
+      if (!getNextUrl(document)) {
+        disconnect();
+      }
+    } catch (e) {
+      // console.error(e);
+      disconnect(); // stop on error to avoid loops
+    } finally {
+      isLoading = false;
+      showLoading(false);
+    }
+  }
+
+  function onIntersect(entries) {
+    if (!entries[0].isIntersecting) return;
+    const nextUrl = getNextUrl(document);
+    if (nextUrl) loadNextPage(nextUrl);
+  }
+
+  function disconnect() {
+    if (observer) observer.disconnect();
+    const t = document.querySelector(SEL.trigger);
+    if (t) t.remove(); // optional: remove trigger
+  }
+
+  function init() {
+    const grid = document.querySelector(SEL.grid);
+    const trigger = document.querySelector(SEL.trigger);
+    const pagerBox = document.querySelector(SEL.pagerBox);
+    if (!grid || !trigger || !pagerBox) return; // single-page collections skip init
+
+    if (observer) observer.disconnect();
+    observer = new IntersectionObserver(onIntersect, { rootMargin: '1000px 0px' });
+    observer.observe(trigger);
+  }
+
+  // Initial load
+  document.addEventListener('DOMContentLoaded', init);
+
+  // Re-init when collection section is replaced via AJAX (filters/sort)
+  document.addEventListener('shopify:section:load', function(e) {
+    if (e && e.target && e.target.querySelector && e.target.querySelector('#CollectionAjaxContent')) {
+      init();
+      // re-scan animations in case the section injected new visible items
+      reinitAnimations([e.target]);
+    }
+  });
+
+  // Some Impulse builds dispatch this after AJAX collection updates
+  document.addEventListener('collection:reloaded', function(e) {
+    init();
+    reinitAnimations([document.querySelector('#CollectionAjaxContent')].filter(Boolean));
+  });
+})();
+</script>
 
 <script type="application/ld+json">
 {

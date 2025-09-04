@@ -1,0 +1,25 @@
+<div>
+<div class="centere"><form class="form-inlinee">
+<div>
+<label for="inputord"></label> <input type="text" id="inputord" placeholder="Enter order id">
+</div>
+<button id="ordbtntrc" type="button" onclick="getHistory(document.getElementById('inputord').value)"> Track </button>
+</form></div>
+<br>
+<div>
+<div id="insertpoint"><!--------insertpoint---></div>
+</div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Order Tracking",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Order Tracking"
+    }
+  ]
+}
+{% endschema %}

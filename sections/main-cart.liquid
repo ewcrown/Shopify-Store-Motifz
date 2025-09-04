@@ -8,7 +8,7 @@
       {%- if cart.item_count == 0 -%}
         <p>{{ 'cart.general.empty' | t }}</p>
       {%- endif -%}
-      <p>{{ 'cart.general.continue_browsing_html' | t: url: routes.all_products_collection_url }}</p>
+      {% comment %} <p>{{ 'cart.general.continue_browsing_html' | t: url: routes.all_products_collection_url }}</p> {% endcomment %}
     </div>
   </header>
 
@@ -62,6 +62,10 @@
           {% endif %}
 
           <div class="cart__item-row cart__checkout-wrapper">
+            <a href="{{ routes.all_products_collection_url }}" class="btn cart__continue-shopping">
+              Continue Shopping
+            </a>
+
             <button type="submit" name="checkout" data-terms-required="{{ settings.cart_terms_conditions_enable }}" class="btn cart__checkout">
               {{ 'cart.general.checkout' | t }}
             </button>
