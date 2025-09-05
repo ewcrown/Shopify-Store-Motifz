@@ -1,0 +1,343 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "ew_lookbook_section_UQ7eat": {
+      "type": "ew-lookbook-section",
+      "blocks": {
+        "image_1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Motifz_X_Sania_Hasan.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/Motifz_X_Sania_Hasan.pdf?v=1706450237"
+          }
+        },
+        "image_2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024_Zohra_Khaddar_Vol_1.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2024_Zohra_Khaddar_Vol_1.pdf?v=1734432027"
+          }
+        },
+        "image_3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024_Vevlvet_Vol_1.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2024_Vevlvet_Vol_1.pdf?v=1733730392"
+          }
+        },
+        "image_4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024_Chiffon_Vol_3.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2024_Chiffon_Vol_3.pdf?v=1731648612"
+          }
+        },
+        "image_5": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024_Chiffon_Vol_2.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2024_Chiffon_Vol_2.pdf?v=1726758628"
+          }
+        },
+        "image_6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024-Umang-Khaddar-02.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2024-Umang-Khaddar-02.pdf?v=1732946630"
+          }
+        },
+        "image_7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024-Umang-Khaddar-01.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2024-Umang-Khaddar-01.pdf?v=1731648224"
+          }
+        },
+        "image_8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024_Premium_Winter_Vol_1.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2024_Premium_Winter_Vol_1.pdf?v=1728284342"
+          }
+        },
+        "image_9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024_Rang_Khaddar_Vol_3.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2024_Rang_Khaddar_Vol_3.pdf?v=1730984862"
+          }
+        },
+        "image_10": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024_Rang_Khaddar_Vol_2.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2024_Rang_Khaddar_Vol_2.pdf?v=1729568233"
+          }
+        },
+        "image_11": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024_Rang_Khaddar_Vol_1.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2024_Rang_Khaddar_Vol_1.pdf?v=1729567841"
+          }
+        },
+        "image_12": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024_Rang_Linen_Vol_1.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2024_Rang_Linen_Vol_1.pdf?v=1727318213"
+          }
+        },
+        "image_13": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024_Prem_Lawn_Vol_4.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2024_Prem_Lawn_Vol_4.pdf?v=1722250554"
+          }
+        },
+        "image_14": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024-Umang-Lawn-03.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2024-Umang-Lawn-03.pdf?v=1727322706"
+          }
+        },
+        "image_15": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024-Umang-Lawn-01.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2024-Umang-Lawn-01.pdf?v=1721792315"
+          }
+        },
+        "image_16": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/24-Soha-Lanw-01.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/24-Soha-Lanw-01.pdf?v=1719406048"
+          }
+        },
+        "image_17": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024_Amal_Lawn_Vol_2.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2024_Amal_Lawn_Vol_2.pdf?v=1716612592"
+          }
+        },
+        "image_18": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024_Prem_Lawn_Vol_3.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2024_Prem_Lawn_Vol_3.pdf?v=1715224435"
+          }
+        },
+        "image_19": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024_Rang_Lawn_Vol_9.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2024_Rang_Lawn_Vol_9.pdf?v=1726746236"
+          }
+        },
+        "image_20": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024_Rang_Lawn_Vol_7.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2024_Rang_Lawn_Vol_7.pdf?v=1721281879"
+          }
+        },
+        "image_21": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024_Rang_Lawn_Vol_6.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2024_Rang_Lawn_Vol_6.pdf?v=1716612591"
+          }
+        },
+        "image_22": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024_Rang_Lawn_Vol_5.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2024_Rang_Lawn_Vol_5.pdf?v=1714793197"
+          }
+        },
+        "image_23": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024_Amal_Lawn_Vol_1.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2024_Amal_Lawn_Vol_1.pdf?v=1711079015"
+          }
+        },
+        "image_24": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024-Umang-01.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2024-Umang-01.pdf?v=1710818277"
+          }
+        },
+        "image_25": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024_Prem_Lawn_Vol_2.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2024_Prem_Lawn_Vol_2.pdf?v=1709532240"
+          }
+        },
+        "image_26": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024_Prem_Lawn_Vol_1.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2024_Prem_Lawn_Vol_1.pdf?v=1707923626"
+          }
+        },
+        "image_27": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024_Rang_Lawn_Vol_4.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2024_Rang_Lawn_Vol_4.pdf?v=1709871662"
+          }
+        },
+        "image_28": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024_Rang_Lawn_Vol_3.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2024_Rang_Lawn_Vol_3.pdf?v=1708490489"
+          }
+        },
+        "image_29": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024_Rang_Lawn_Vol_2.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2024_Rang_Lawn_Vol_2.pdf?v=1707638575"
+          }
+        },
+        "image_30": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024_Rang_Lawn_Vol_1.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2024_Rang_Lawn_Vol_1.pdf?v=1706971085"
+          }
+        },
+        "image_31": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024_Chiffon_Vol_1.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2024_Chiffon_Vol_1.pdf?v=1706420309"
+          }
+        },
+        "image_32": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Premium_Cambric_2023.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/Premium_Cambric_2023.pdf?v=1703326382"
+          }
+        },
+        "image_33": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024_Jacquard_Vol_1.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2024_Jacquard_Vol_1.pdf?v=1700555279"
+          }
+        },
+        "image_34": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024_Velvet_Vol_1_bdd3b912-c147-4a92-b31d-02c1fcd73fd8.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2024_Velvet_Vol_1.pdf?v=1701939518"
+          }
+        },
+        "image_35": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024_Zohra_Lawn_Vol_4.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2024_Zohra_Lawn_Vol_4.pdf?v=1715945475"
+          }
+        },
+        "image_36": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024_Zohra_Lawn_Vol_3.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2024_Zohra_Lawn_Vol_3.pdf?v=1709812643"
+          }
+        },
+        "image_37": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024_Zohra_Lawn_Vol_2-1.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2024_Zohra_Lawn_Vol_2.pdf?v=1708920159"
+          }
+        },
+        "image_38": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024_Zohra_Lawn_Vol_1.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2024_Zohra_Lawn_Vol_1.pdf?v=1707973476"
+          }
+        },
+        "image_39": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024_Zohra_Khaddar_Vol_1.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2024_Zohra_Khaddar_Vol_1.pdf?v=1734432027"
+          }
+        }
+      },
+      "block_order": [
+        "image_1",
+        "image_2",
+        "image_3",
+        "image_4",
+        "image_5",
+        "image_6",
+        "image_7",
+        "image_8",
+        "image_9",
+        "image_10",
+        "image_11",
+        "image_12",
+        "image_13",
+        "image_14",
+        "image_15",
+        "image_16",
+        "image_17",
+        "image_18",
+        "image_19",
+        "image_20",
+        "image_21",
+        "image_22",
+        "image_23",
+        "image_24",
+        "image_25",
+        "image_26",
+        "image_27",
+        "image_28",
+        "image_29",
+        "image_30",
+        "image_31",
+        "image_32",
+        "image_33",
+        "image_34",
+        "image_35",
+        "image_36",
+        "image_37",
+        "image_38",
+        "image_39"
+      ],
+      "name": "Linked image grid",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "ew_lookbook_section_UQ7eat"
+  ]
+}

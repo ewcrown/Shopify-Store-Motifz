@@ -35,11 +35,11 @@
             "color_swatches": false
           }
         },
-        "sales_point": {
+        "sales_point_EecfkP": {
           "type": "sales_point",
           "settings": {
             "icon": "globe",
-            "text": "Free worldwide shipping"
+            "text": "Shipping worldwide"
           }
         },
         "inventory_status": {
@@ -50,7 +50,7 @@
           }
         },
         "ymq_product_options_variants_option_Rphgm8": {
-          "type": "shopify://apps/ymq-product-options-variants/blocks/option/86b91121-1f62-4e27-9812-b70a823eb918",
+          "type": "shopify:\/\/apps\/ymq-product-options-variants\/blocks\/option\/86b91121-1f62-4e27-9812-b70a823eb918",
           "settings": {
             "product": "{{product}}"
           }
@@ -79,7 +79,7 @@
           "type": "tab",
           "settings": {
             "title": "Shipping information",
-            "content": "<p>Use collapsible tabs for more detailed information that will help customers make a purchasing decision.</p><p>Ex: Shipping and return policies, size guides, and other common questions.</p>",
+            "content": "<p>In Pakistan a flat shipping fee of Rs. 200 will be charged on all orders, regardless of the order value. For international customers shipping is calculated at checkout. Please Note Free shipping is not applicable on order exchange.<\/p>",
             "page": ""
           }
         },
@@ -93,7 +93,7 @@
         "separator",
         "size_chart",
         "variant_picker",
-        "sales_point",
+        "sales_point_EecfkP",
         "inventory_status",
         "ymq_product_options_variants_option_Rphgm8",
         "quantity_selector_rcXgzK",
@@ -103,7 +103,7 @@
         "share"
       ],
       "settings": {
-        "sku_enable": false,
+        "sku_enable": true,
         "image_position": "left",
         "image_size": "large",
         "product_zoom_enable": true,
@@ -128,7 +128,7 @@
       "settings": {
         "subtitle": "locally crafted",
         "title": "Made in California",
-        "text": "<p>We've always believed in the power of locally made goods. The quality of the craftsmanship and the local artisans we employ are what make Luxette our mission in life.</p>",
+        "text": "<p>We've always believed in the power of locally made goods. The quality of the craftsmanship and the local artisans we employ are what make Luxette our mission in life.<\/p>",
         "button_label": "",
         "button_link": "",
         "layout": "right",
@@ -147,7 +147,7 @@
         "image2_mask": "none",
         "subtitle": "Every time",
         "title": "Perfectly tailored",
-        "text": "<p>Tailored to fit right every time. Use our handy size guide to choose the right size and if it ever doesn't fit, just return it and we'll pay the postage.</p>",
+        "text": "<p>Tailored to fit right every time. Use our handy size guide to choose the right size and if it ever doesn't fit, just return it and we'll pay the postage.<\/p>",
         "button_label": "",
         "button_link": "",
         "button_style": "primary",
@@ -167,7 +167,7 @@
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>Couldn't be happier with the service I received from this company.</p>",
+            "testimonial": "<p>Couldn't be happier with the service I received from this company.<\/p>",
             "author": "Leslie M.",
             "author_info": "Toronto, ON"
           }
@@ -176,7 +176,7 @@
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>Really went out of their way to make me feel special as a customer, highly recommend!</p>",
+            "testimonial": "<p>Really went out of their way to make me feel special as a customer, highly recommend!<\/p>",
             "author": "Rachel F.",
             "author_info": "Los Angeles, CA"
           }
@@ -185,7 +185,7 @@
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>Fantastic fabrics, great fit and no issues going through the laundry either!</p>",
+            "testimonial": "<p>Fantastic fabrics, great fit and no issues going through the laundry either!<\/p>",
             "author": "Sam R.",
             "author_info": "Brooklyn, NY"
           }
@@ -194,7 +194,7 @@
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>Arrived fast and beautifully boxed. They even let me model on their site :)</p>",
+            "testimonial": "<p>Arrived fast and beautifully boxed. They even let me model on their site :)<\/p>",
             "author": "Sharon S.",
             "author_info": "New Orleans, LA"
           }
@@ -203,7 +203,7 @@
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>Couldn't be happier with the service I received from this company.</p>",
+            "testimonial": "<p>Couldn't be happier with the service I received from this company.<\/p>",
             "author": "Matt C.",
             "author_info": "Montreal, QC"
           }
@@ -233,7 +233,7 @@
         "image2_mask": "none",
         "subtitle": "Soft, breezy",
         "title": "Lightweight fabric",
-        "text": "<p>Keep cool this summer with our lightweight Egyptian cotton-polyester blend, the softest shirts on the beach.</p>",
+        "text": "<p>Keep cool this summer with our lightweight Egyptian cotton-polyester blend, the softest shirts on the beach.<\/p>",
         "button_label": "",
         "button_link": "",
         "button_style": "primary",
@@ -268,7 +268,7 @@
           "settings": {
             "heading": "mega summer sale",
             "heading_size": "h1",
-            "text": "<p>30% off of all summer dresses</p>",
+            "text": "<p>30% off of all summer dresses<\/p>",
             "content_alignment": "center"
           }
         },

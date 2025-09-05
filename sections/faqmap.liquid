@@ -1,0 +1,616 @@
+{%- if section.settings.page_title_enable or section.settings.page_content_enable -%}
+  <div class="page-width page-content{% if section.blocks.size > 0 %} page-content--with-blocks{% endif %}">
+    <div class="grid">
+      <div class="grid__item medium-up--three-quarters">
+        {%- render 'breadcrumbs' -%}
+
+        {%- if section.settings.page_title_enable -%}
+          <header class="section-header">
+            <h1 class="section-header__title">{{ page.title }}</h1>
+          </header>
+        {%- endif -%}
+
+        {%- if section.settings.page_content_enable -%}
+          <div class="rte text-spacing">
+            {{ page.content }}
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+{%- endif -%}
+
+<div class="faqs-maps">
+  <div class="medium-up--one-quarter small--one-whole">
+    <div class="container">
+      <div class="branch-accordion">
+        <div class="branch-title">
+          <h2>LAHORE</h2>
+          {%- render 'collapsible-icons-alt', no_circle: false -%}
+        </div>
+        <div class="branch">
+          <p class="location">GULBERG</p>
+          <p>B-2, 47-A, SHOP NO:3, Near Sonica Jewellers Signature, M.M. ALAM ROAD</p>
+          <p class="phone">PHONE: 042-35751037</p>
+          <p class="location">DHA</p>
+          <p>130-Y BLOCK COMMERCIAL, DHA, PHASE 3.</p>
+          <p class="phone">PHONE: 042-35694612&nbsp;</p>
+          <p class="location">DOLMEN MALL</p>
+          <p>SHOP NO. 77-S, SECOND FLOOR, DOLMEN MALL DHA PHASE 6.</p>
+          <p class="phone">PHONE: 042-37263110&nbsp;</p>
+          <p class="location">EMPORIUM</p>
+          <p>SHOP NO: 3, GROUND FLOOR EMPORIUM MALL.</p>
+          <p class="phone">PHONE: 042-32592251</p>
+          <p class="location">FEROZPUR ROAD</p>
+          <p>21 KM FEROZEPUR RD, NEAR IBRAHIM MASJID, ASIF TOWN.</p>
+          <p class="phone">PHONE: 042-35950169</p>
+          <p class="location">MALL OF LAHORE</p>
+          <p>172 TUFAIL ROAD, MALL OF LAHORE CANTT</p>
+          <p class="phone">PHONE: 042-36622460</p>
+          <p class="location">AVENUE MALL</p>
+          <p>P BLOCK, DHA, MAIN, GHAZI RD, NEAR REHMAN GARDENS.</p>
+          <p class="phone">PHONE: 042-35950169</p>
+          <p class="location">BAHRIA TOWN</p>
+          <p>PLAZA NO: 145 B SECTOR C BAHRIA TOWN</p>
+          <p class="phone">PHONE: 042-37887272</p>
+        </div>
+      </div>
+      <div class="branch-accordion">
+        <div class="branch-title">
+          <h2>ISLAMABAD</h2>
+          {%- render 'collapsible-icons-alt', no_circle: false -%}
+        </div>
+        <div class="branch">
+          <p class="location">CENTAURUS</p>
+          <p>SHOP NO: 147, 1ST FLOOR, CENTAURUS MALL.</p>
+          <p class="phone">PHONE: 051-2701318</p>
+          <p class="location">CAPITAL SQUARE</p>
+          <p>SHOP NO: M93/94, MEZZANINE FLOOR CAPITAL SQUARE BLOCK C, SECTOR B-17.</p>
+          <p class="phone">PHONE: 0314-5036441</p>
+        </div>
+      </div>
+      <div class="branch-accordion">
+        <div class="branch-title">
+          <h2>WAH CANTT</h2>
+          {%- render 'collapsible-icons-alt', no_circle: false -%}
+        </div>
+        <div class="branch">
+          <p class="location">MALL OF NEW CITY</p>
+          <p>BLOCK M, MAIN BOULEVARD ROAD NEW CITY PHASE 2 WAH CANTT, TEXILA.</p>
+          <p class="phone">PHONE: ‪0312 5806333‬</p>
+        </div>
+      </div>
+      <div class="branch-accordion">
+        <div class="branch-title">
+          <h2>PESHAWAR</h2>
+          {%- render 'collapsible-icons-alt', no_circle: false -%}
+        </div>
+        <div class="branch">
+          <p class="location">JK PLAZA</p>
+          <p>SHOP NO: 9-10 JK PLAZA ARBAB ROAD STOP UNIVERSITY ROAD.</p>
+          <p class="phone">PHONE: 091-5702094</p>
+          <p class="location">SYED TOWER</p>
+          <p>1ST FLOOR SYED TOWER OPPOSITE CUSTOM HOUSE UNIVERSITY ROAD.</p>
+          <p class="phone">PHONE: 091-5844280</p>
+        </div>
+      </div>
+      <div class="branch-accordion">
+        <div class="branch-title">
+          <h2>GUJRANWALA</h2>
+          {%- render 'collapsible-icons-alt', no_circle: false -%}
+        </div>
+        <div class="branch">
+          <p class="location">FAZAL CENTER</p>
+          <p>FAZAL CENTRE, CANTT.</p>
+          <p class="phone">PHONE: 055-3864929</p>
+        </div>
+      </div>
+      <div class="branch-accordion">
+        <div class="branch-title">
+          <h2>FAISALABAD</h2>
+          {%- render 'collapsible-icons-alt', no_circle: false -%}
+        </div>
+        <div class="branch">
+          <p class="location">RCG MALL</p>
+          <p>RCG MALL, JARANWALA RD, KOHINOOR CITY.</p>
+          <p class="phone">PHONE: 041-8728512</p>
+          <p class="location">LYALLPUR GALLERIA</p>
+          <p>GALLERIA، E CANAL RD, SAEED COLONY NASAR ULLAH KHAN TOWN.</p>
+          <p class="phone">PHONE: 041-8728512</p>
+        </div>
+      </div>
+      <div class="branch-accordion">
+        <div class="branch-title">
+          <h2>KARACHI</h2>
+          {%- render 'collapsible-icons-alt', no_circle: false -%}
+        </div>
+        <div class="branch">
+          <p class="location">LUCKY ONE</p>
+          <p>S 13 B SECOND FLOOR , LA -2/B LUCKYONE MALL.</p>
+          <p class="phone">PHONE: 021-37181259</p>
+          <p class="location">FORUM MALL</p>
+          <p>SHOP NO: 62-63-64, THE FORUM MALL CLIFTON.</p>
+          <p class="phone">PHONE: 021-35301717</p>
+          <p class="location">TARIQ ROAD</p>
+          <p>SHOP # Z-81 NEAR DOLMEN MALL TARIQ ROAD.</p>
+          <p class="phone">PHONE: 021-34373778</p>
+        </div>
+      </div>
+      <div class="branch-accordion">
+        <div class="branch-title">
+          <h2>MULTAN</h2>
+          {%- render 'collapsible-icons-alt', no_circle: false -%}
+        </div>
+        <div class="branch">
+          <p class="location">GULGASHT</p>
+          <p>Shop No G-07 BRAND ROAD GULGASHT SHARIF COMPLEX.</p>
+          <p class="phone">PHONE: 061-2111269</p>
+        </div>
+      </div>
+      <div class="branch-accordion">
+        <div class="branch-title">
+          <h2>SAHIWAL</h2>
+          {%- render 'collapsible-icons-alt', no_circle: false -%}
+        </div>
+        <div class="branch">
+          <p class="location">GIRLS COLLEGE ROAD</p>
+          <p>52 CIVIL LINES GIRL COLLEGE ROAD NEAR THANA FATHEH SHER SAHIWAL.</p>
+          <p class="phone">PHONE: 0321-6912685</p>
+        </div>
+      </div>
+      <div class="branch-accordion">
+        <div class="branch-title">
+          <h2>ABBOTTABAD</h2>
+          {%- render 'collapsible-icons-alt', no_circle: false -%}
+        </div>
+        <div class="branch">
+          <p class="location">JADOON PLAZA</p>
+          <p>SHOP NO: 117, JADOON PLAZA PHASE 3 MANSEHRA ROAD.</p>
+          <p class="phone">PHONE: 0992-339929</p>
+        </div>
+      </div>
+      <div class="branch-accordion">
+        <div class="branch-title">
+          <h2>DASKA</h2>
+          {%- render 'collapsible-icons-alt', no_circle: false -%}
+        </div>
+        <div class="branch">
+          <p class="location">COLLEGE ROAD</p>
+          <p>OPPOSITE MINI MALL COLLEGE ROAD.</p>
+          <p class="phone">PHONE: 052-6613300</p>
+        </div>
+      </div>
+
+      <div class="branch-accordion">
+        <div class="branch-title">
+          <h2>KASUR</h2>
+          {%- render 'collapsible-icons-alt', no_circle: false -%}
+        </div>
+        <div class="branch">
+          <p class="location">ORHAN PLAZA</p>
+          <p>ORHAN PLAZA NEAR DINNER'S STORE MAIN SHAHBAZ KHAN ROAD.</p>
+          <p class="phone">PHONE: 049-2727202</p>
+        </div>
+      </div>
+      <div class="branch-accordion">
+        <div class="branch-title">
+          <h2>SARGODHA</h2>
+          {%- render 'collapsible-icons-alt', no_circle: false -%}
+        </div>
+        <div class="branch">
+          <p class="location">UNIVERSITY ROAD</p>
+          <p>UNIVERSITY ROAD KHAYABANE E SADIQ SARGODHA.</p>
+          <p class="phone">PHONE: 048-2148362</p>
+        </div>
+      </div>
+
+      <div class="branch-accordion">
+        <div class="branch-title">
+          <h2>MANDI BAHAUDDIN</h2>
+          {%- render 'collapsible-icons-alt', no_circle: false -%}
+        </div>
+        <div class="branch">
+          <p class="location">KATCHERY BAZAR</p>
+          <p>SHOP KATCHERY BAZAR NEAR MUTTO PLAZA MANDI BAHAUDDIN.</p>
+          <p class="phone">PHONE: 054-6507121</p>
+        </div>
+      </div>
+
+      <div class="branch-accordion">
+        <div class="branch-title">
+          <h2>DERA ISMAIL KHAN</h2>
+          {%- render 'collapsible-icons-alt', no_circle: false -%}
+        </div>
+        <div class="branch">
+          <p class="location">CIRCULAR ROAD</p>
+          <p>METRO MALL NORTH CIRCULAR ROAD NEARBY COMMERCE COLLEGE.</p>
+          <p class="phone">PHONE: 0966-732268</p>
+        </div>
+      </div>
+
+      <div class="branch-accordion">
+        <div class="branch-title">
+          <h2>BATKHELA</h2>
+          {%- render 'collapsible-icons-alt', no_circle: false -%}
+        </div>
+        <div class="branch">
+          <p class="location">AMANDARA</p>
+          <p>CITY MAX MALL AMANDARA</p>
+          <p class="phone">PHONE: 0315-7066000</p>
+        </div>
+      </div>
+
+      <div class="branch-accordion">
+        <div class="branch-title">
+          <h2>SWAT</h2>
+          {%- render 'collapsible-icons-alt', no_circle: false -%}
+        </div>
+        <div class="branch">
+          <p class="location">SWAT TOWER</p>
+          <p>SHOP NO: 3,4 LGF BLOCK W2 SWAT TOWER, BALOGRAM(QAMAR), MINGORA SWAT.</p>
+          <p class="phone">PHONE: ‪0348-0245835‬</p>
+        </div>
+      </div>
+
+      <div class="branch-accordion">
+        <div class="branch-title">
+          <h2>SWABI</h2>
+          {%- render 'collapsible-icons-alt', no_circle: false -%}
+        </div>
+        <div class="branch">
+          <p class="location">JEHANGIRA ROAD</p>
+          <p>SHOP NO: G-14, CITY CENTER SWABI MAIN JEHANGIRA ROAD NEAR KYBER CITY MALL, SWABI.</p>
+          <p class="phone">PHONE: 0314-9995989</p>
+        </div>
+      </div>
+      <div class="branch-accordion">
+        <div class="branch-title">
+          <h2>MARDAN</h2>
+          {%- render 'collapsible-icons-alt', no_circle: false -%}
+        </div>
+        <div class="branch">
+          <p class="location">THE MALL OF MARDAN</p>
+          <p>THE MALL OF MARDAN NEAR BILAL MASJID NEAR MARDAN.</p>
+          <p class="phone">PHONE: ‪0313-0953943‬</p>
+        </div>
+      </div>
+
+      <div class="branch-accordion">
+        <div class="branch-title">
+          <h2>PHALIA</h2>
+          {%- render 'collapsible-icons-alt', no_circle: false -%}
+        </div>
+        <div class="branch">
+          <p class="location">GUJRAT ROAD</p>
+          <p>OPPOSITE MALL OF PHALIA, 1ST FLOOR, KIDS ICON, GUJRAT ROAD, PHALIA.</p>
+          <p class="phone">PHONE: 0342-7385460</p>
+        </div>
+      </div>
+
+      <div class="branch-accordion">
+        <div class="branch-title">
+          <h2>TOBA TEK SINGH</h2>
+          {%- render 'collapsible-icons-alt', no_circle: false -%}
+        </div>
+        <div class="branch">
+          <p class="location">TALAB BAZAR</p>
+          <p>THE ALKARAM FABRIC TALAB BAZAR, TOBA TEK SINGH.</p>
+          <p class="phone">PHONE: 046-2517440</p>
+        </div>
+      </div>
+
+      <div class="branch-accordion">
+        <div class="branch-title">
+          <h2>AZAD KASHMIR</h2>
+          {%- render 'collapsible-icons-alt', no_circle: false -%}
+        </div>
+        <div class="branch">
+          <p class="location">BHIMBER</p>
+          <p>NEAR NBP, OPP. GPO GUJRAT ROAD KOTHI MOR BHIMBER, AZAD KASHMIR.</p>
+          <p class="phone">PHONE: 0300-6227575</p>
+        </div>
+      </div>
+
+      <div class="branch-accordion">
+        <div class="branch-title">
+          <h2>KOTLA</h2>
+          {%- render 'collapsible-icons-alt', no_circle: false -%}
+        </div>
+        <div class="branch">
+          <p class="location">MARIYAM CHOWK</p>
+          <p>MARYAM CHOWK BHIMBER ROAD, KOTLA&nbsp; ARBAB ALI</p>
+          <p class="phone">PHONE:&nbsp;0301-5895999</p>
+        </div>
+      </div>
+
+      <div class="branch-accordion">
+        <div class="branch-title">
+          <h2>QUETTA</h2>
+          {%- render 'collapsible-icons-alt', no_circle: false -%}
+        </div>
+        <div class="branch">
+          <p class="location">MILLENNIUM MALL</p>
+          <p>SHOP # 2, 2ND FLOOR, MILLENNIUM MALL, GULISTAN ROAD OPPO IG OFFICE.</p>
+          <p class="phone">PHONE: 0303-3300544</p>
+        </div>
+      </div>
+            <div class="branch-accordion">
+        <div class="branch-title">
+          <h2>KAMALIA</h2>
+          {%- render 'collapsible-icons-alt', no_circle: false -%}
+        </div>
+        <div class="branch">
+          <p class="location">ABID PLAZA</p>
+          <p>SHOP NO. 5, ABID PLAZA, CHICHAWATANI ROAD, KAMALIA, DISTRICT TOBA TEK SINGH.</p>
+          <p class="phone">PHONE:&nbsp;0304-0383855</p>
+        </div>
+      </div>
+      <div class="branch-accordion">
+        <div class="branch-title">
+          <h2>OKARA</h2>
+          {%- render 'collapsible-icons-alt', no_circle: false -%}
+        </div>
+        <div class="branch">
+          <p class="location">M.A JINNAH ROAD</p>
+          <p>M.A JINNAH ROAD OPPOSITE PSO FILLING STATION REHAN AKBAR PLAZA OKARA</p>
+          <p class="phone">PHONE: 044 2510417</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="medium-up--three-quarters small--one-whole">
+    <div class="map-container">
+      <iframe
+        id="map-iframe"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4187.696221156737!2d74.34708959451874!3d31.51134959764955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391904566bc47b47%3A0x1f63de82dd557803!2sMotifz!5e0!3m2!1sen!2s!4v1728003548146!5m2!1sen!2s"
+        width="100%"
+        height="650"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </div>
+</div>
+<script>
+  // Select all branch-title elements
+  document.querySelectorAll('.branch-title').forEach(function (branchTitle) {
+    branchTitle.addEventListener('click', function () {
+      var branchAccordion = this.closest('.branch-accordion');
+      var currentBranch = this.nextElementSibling;
+      var allbranchAccordion = document.querySelectorAll('.branch-accordion');
+
+      // Remove 'is-open' and 'active' classes from all branches except the clicked one
+      allbranchAccordion.forEach(function (accordion) {
+        if (accordion !== branchAccordion) {
+          accordion.classList.remove('is-open');
+          accordion.querySelectorAll('.branch').forEach(function (branch) {
+            branch.classList.remove('active');
+          });
+        }
+      });
+
+      // Toggle the 'active' class on the current branch
+      currentBranch.classList.toggle('active');
+
+      // If the current branch becomes active, add 'is-open' to the accordion
+      if (currentBranch.classList.contains('active')) {
+        branchAccordion.classList.add('is-open');
+      } else {
+        branchAccordion.classList.remove('is-open');
+      }
+    });
+  });
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const locations = document.querySelectorAll('.location');
+    const mapIframe = document.getElementById('map-iframe');
+
+    // Function to change the map's src attribute
+    function updateMap(address) {
+      // This is where you embed the map URL for each location
+      let mapUrl = '';
+
+      if (address.includes('ALAM ROAD')) {
+        console.log('heeeloo');
+
+        mapUrl =
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4187.696221156737!2d74.34708959451874!3d31.51134959764955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391904566bc47b47%3A0x1f63de82dd557803!2sMotifz!5e0!3m2!1sen!2s!4v1728003548146!5m2!1sen!2s';
+      } else if (address.includes('DHA, PHASE 3')) {
+        mapUrl =
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d850.747903164504!2d74.37484918644319!3d31.469416893408813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190671801790e3%3A0xf687c18b63f0ba6a!2sY%20Block%20Park!5e0!3m2!1sen!2s!4v1728003676745!5m2!1sen!2s';
+      } else if (address.includes('SHOP KATCHERY BAZAR NEAR MUTTO PLAZA MANDI BAHAUDDIN')) {
+        mapUrl =
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.7439858096923!2d73.491207374654!3d32.586351093707236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391f7dc159027dcf%3A0xafce65e42ff97a44!2sMutto%20Plaza!5e0!3m2!1sen!2s!4v1728640891825!5m2!1sen!2s';
+      } else if (address.includes('DOLMEN MALL DHA PHASE 6')) {
+        mapUrl =
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.7439858096923!2d74.4330788!3d31.4674934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391909cb80f87fa1%3A0xb76cb42865919b48!2sDolmen%20Mall%20Lahore!5e0!3m2!1sen!2s!4v1680895866397!5m2!1sen!2s';
+      } else if (address.includes('EMPORIUM MALL')) {
+        mapUrl =
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108872.49371674175!2d74.22459855868492!3d31.489387257256677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391903d4d940f12b%3A0xdb8c83f6699d5226!2sEmporium%20Mall!5e0!3m2!1sen!2s!4v1728003815305!5m2!1sen!2s';
+      } else if (address.includes('21 KM FEROZEPUR RD, NEAR IBRAHIM MASJID, ASIF TOWN')) {
+        mapUrl =
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.387266648281!2d74.3617027!3d31.4034546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919079c2b4d3249%3A0xbdf87c3837bdbffb!2s21%20Km%20Ferozepur%20Rd%2C%20Satellite%20Town%2C%20Lahore%2C%20Punjab%2054000!5e0!3m2!1sen!2s!4v1728003909027!5m2!1sen!2s';
+      } else if (address.includes('THE MALL OF MARDAN')) {
+        mapUrl =
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3300.37375337884!2d72.03206527473172!3d34.187925710555504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38deca3025ffefef%3A0x9a2b1b205f7652a0!2sThe%20Mall%20of%20Mardan!5e0!3m2!1sen!2s!4v1728640740048!5m2!1sen!2s';
+      } else if (address.includes('LAHORE CANTT')) {
+        mapUrl =
+          'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13603.251781608256!2d74.3787239!3d31.5292971!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919050c65cf88c7%3A0x640ecde6ca852c31!2sMall%20of%20Lahore!5e0!3m2!1sen!2s!4v1728640138925!5m2!1sen!2s';
+      } else if (address.includes('REHMAN GARDENS')) {
+        mapUrl =
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3527.4558262797345!2d74.3182507!3d31.4731875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391905ba67942d89%3A0xe68dc586c859220c!2sRehman%20Gardens!5e0!3m2!1sen!2s!4v1728003909027!5m2!1sen!2s';
+      } else if (address.includes('JK PLAZA')) {
+        mapUrl =
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12574.726251529688!2d71.49744354669218!3d34.00302772243756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38d91718efc2a5a5%3A0x3ee513136a62317d!2sJ.K%20Plaza!5e0!3m2!1sen!2s!4v1728046330941!5m2!1sen!2s';
+      } else if (address.includes('BAHRIA TOWN')) {
+        mapUrl =
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.394212273543!2d74.18411257459772!3d31.37569205427751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3918ff5d3f53a2db%3A0x2c742abfd44ad1be!2sMotifz%20Bahria%20Town!5e0!3m2!1sen!2s!4v1729161207841!5m2!1sen!2s';
+      } else if (address.includes('FAZAL CENTRE')) {
+        mapUrl =
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3374.671462997103!2d74.16194277463765!3d32.240011511237526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391f2885e4da0c2b%3A0xf1720d389e11b415!2sFazal%20Centre!5e0!3m2!1sen!2s!4v1728010218466!5m2!1sen!2s';
+      } else if (address.includes('CENTAURUS MALL')) {
+        mapUrl =
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.0351470068535!2d73.04809607470804!3d33.708039435828546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfb0f47e234f%3A0xdaeafc9785227447!2sMotifz!5e0!3m2!1sen!2s!4v1728009414031!5m2!1sen!2s';
+      } else if (address.includes('PWD')) {
+        mapUrl =
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3324.246734386728!2d73.14556367470145!3d33.57294249288847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfec455d95b253%3A0xf9c17b79b9973fcf!2sMotifz!5e0!3m2!1sen!2s!4v1728009546504!5m2!1sen!2s';
+      } else if (address.includes('CAPITAL SQUARE')) {
+        mapUrl =
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.967928512416!2d72.82381537442028!3d33.683894611276855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfa2360ec85e45%3A0xbd0a2dc2ae6947ee!2sCapital%20Square%20Shopping%20Mall%20%26%20Luxury%20Apartments!5e0!3m2!1sen!2s!4v1728009645551!5m2!1sen!2s';
+      } else if (address.includes('TEXILA')) {
+        mapUrl =
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6635.63423458928!2d72.71668697770997!3d33.7395449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfa74233b6bcd3%3A0x2cc68b83832e22ea!2sM%20Block%20New%20City%20Phase-II!5e0!3m2!1sen!2s!4v1728009822950!5m2!1sen!2s';
+      } else if (address.includes('RCG')) {
+        mapUrl =
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.1327735803716!2d73.1147344745992!3d31.410467752565477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39226915390c8705%3A0x327aa0ddcb90df30!2sRCG!5e0!3m2!1sen!2s!4v1728010853256!5m2!1sen!2s';
+      } else if (address.includes('SAEED COLONY')) {
+        mapUrl =
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6808.497531029542!2d73.1224442397094!3d31.434817751254343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39226858337edbcd%3A0x766d25fb548c930f!2sLyallpur%20Galleria!5e0!3m2!1sen!2s!4v1728010803940!5m2!1sen!2s';
+      } else if (address.includes('UNIVERSITY ROAD')) {
+        mapUrl =
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3381.023179393377!2d72.6860145!3d32.068621799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39217794baf6b153%3A0x7a642e16c4a0cfb3!2sUniversity%20Road%2C%20Sargodha%2C%20Punjab!5e0!3m2!1sen!2s!4v1728640485454!5m2!1sen!2s';
+      } else if (address.includes('SWABI')) {
+        mapUrl =
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.353781473419!2d72.4579081747266!3d34.08607631594482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dee532e47c961f%3A0xa217a1614e56f11b!2sCity%20Center%20Swabi!5e0!3m2!1sen!2s!4v1728640666496!5m2!1sen!2s';
+      } else if (address.includes('MARDAN')) {
+        mapUrl =
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d179.20641856934376!2d73.0626337318454!3d33.69799687857642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391f81a17967310f%3A0xd9d40766b35b906b!2sMall%20of%20Mardan!5e0!3m2!1sen!2s!4v1728003909027!5m2!1sen!2s';
+      } else if (address.includes('PHALIA')) {
+        mapUrl =
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d179.20641856934376!2d73.0626337318454!3d33.69799687857642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391f81a17967310f%3A0xd9d40766b35b906b!2sPhalia!5e0!3m2!1sen!2s!4v1728003909027!5m2!1sen!2s';
+      } else if (address.includes('TOBA TEK SINGH')) {
+        mapUrl =
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d179.20641856934376!2d73.0626337318454!3d33.69799687857642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391f81a17967310f%3A0xd9d40766b35b906b!2sToba%20Tek%20Singh!5e0!3m2!1sen!2s!4v1728003909027!5m2!1sen!2s';
+      } else if (address.includes('BHIMBER')) {
+        mapUrl =
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d179.20641856934376!2d73.0626337318454!3d33.69799687857642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391f81a17967310f%3A0xd9d40766b35b906b!2sBhimber!5e0!3m2!1sen!2s!4v1728003909027!5m2!1sen!2s';
+      } else if (address.includes('KOTLA ARBAB ALI')) {
+        mapUrl =
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26814.16117703189!2d74.03460351437023!3d32.8513370365127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391fa8d4a1e1f8d7%3A0xbe39b7a6855aa236!2sKotla%20Arab%20Ali%20Khan%2C%20Gujrat%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1728010063604!5m2!1sen!2s';
+      } else if (address.includes('LUCKYONE MALL')) {
+        mapUrl =
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.9915598558964!2d67.08468887433425!3d24.93235744237881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f4eb7183b97%3A0x35709df45c0003aa!2sLucky%20One%20Mall!5e0!3m2!1sen!2s!4v1728420268916!5m2!1sen!2s';
+      } else if (address.includes('THE FORUM MALL CLIFTON')) {
+        mapUrl =
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.07198240494!2d67.03522307433047!3d24.827211846589147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33db645555555%3A0x6732abcb273f8847!2sThe%20Forum%20Shopping%20Mall%20Karachi!5e0!3m2!1sen!2s!4v1728420318737!5m2!1sen!2s';
+      } else if (address.includes('DOLMEN MALL TARIQ ROAD')) {
+        mapUrl =
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14478.500024523473!2d67.04418024691738!3d24.876654033041028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33eecaef72355%3A0x3c9cca44c77de888!2sDolmen%20Mall%20Tariq%20Road!5e0!3m2!1sen!2s!4v1728420358569!5m2!1sen!2s';
+      } else if (address.includes('BRAND ROAD GULGASHT SHARIF COMPLEX')) {
+        mapUrl =
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3447.762787249778!2d71.46973757454568!3d30.21531711045632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b33f4bd1b588d%3A0x325f17caf4f5e106!2sSharif%20Complex!5e0!3m2!1sen!2s!4v1728419319034!5m2!1sen!2s';
+      } else if (address.includes('CIVIL LINES GIRL COLLEGE ROAD')) {
+        mapUrl =
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27456.52369549009!2d73.07674652873236!3d30.660285092175357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3922b7aeb59747bb%3A0xda728fe4f874399e!2sPolice%20Station%20-%20Civil%20Line%2C%20Sahiwal!5e0!3m2!1sen!2s!4v1728419457875!5m2!1sen!2s';
+      } else if (address.includes('JADOON PLAZA PHASE 3 MANSEHRA ROAD')) {
+        mapUrl =
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13201.913926190999!2d73.21899839355376!3d34.18524912016567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38de3193dd95fd21%3A0x25790640dcdba7a7!2sJadoon%20Plaza%20Phase%203!5e0!3m2!1sen!2s!4v1728419518037!5m2!1sen!2s';
+      } else if (address.includes('MINI MALL COLLEGE ROAD')) {
+        mapUrl =
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13473.899909886975!2d74.76727417759028!3d32.406432871782556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391ea50b7d671c21%3A0x5df1ba1919328c38!2sMini%20Mall!5e0!3m2!1sen!2s!4v1728419585156!5m2!1sen!2s';
+      } else if (address.includes("ORHAN PLAZA NEAR DINNER'S STORE")) {
+        mapUrl =
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13662.232098807757!2d74.43512157182305!3d31.12201405470525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919b9365fd69015%3A0x94035358a998fc26!2sKASUR%20DIGITAL%20CABLE%2C%20KASUR!5e0!3m2!1sen!2s!4v1728419835423!5m2!1sen!2s';
+      } else if (address.includes('UNIVERSITY ROAD KHAYABANE E SADIQ SARGODHA')) {
+        mapUrl =
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3380.9683371448423!2d72.68128662462969!3d32.07010511977828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39217794baf6b153%3A0x891b1b11658cf553!2sUniversity%20Road%2C%20Sargodha%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1728419920815!5m2!1sen!2s';
+      } else if (address.includes('METRO MALL NORTH CIRCULAR ROAD')) {
+        mapUrl =
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13789.195231827536!2d71.4625841679388!3d30.228554347636067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b347753c6fd49%3A0x146be6a9a7e9a43c!2sMetro%20Mall!5e0!3m2!1sen!2s!4v1728420085121!5m2!1sen!2s';
+      } else if (address.includes('CITY MAX MALL AMANDARA')) {
+        mapUrl =
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.197894616229!2d71.99081487475348!3d34.624439037302615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dc01ec3af48eb7%3A0x3264f35a538346c7!2sCity%20Max%20Mall%20Jalawanan%20Alladhand%20Dheri!5e0!3m2!1sen!2s!4v1728418978593!5m2!1sen!2s';
+      } else if (address.includes('SWAT TOWER')) {
+        mapUrl =
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52446.447873414385!2d72.27149844128664!3d34.75803642041177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dc23ba87ab5823%3A0x20aa11327ed4d0a4!2sMingora%20Swat!5e0!3m2!1sen!2s!4v1728417812526!5m2!1sen!2s';
+      } else if (address.includes('CITY CENTER SWABI')) {
+        mapUrl =
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.3537814734273!2d72.45790817472663!3d34.086076315944815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dee532e47c961f%3A0xa217a1614e56f11b!2sCity%20Center%20Swabi!5e0!3m2!1sen!2s!4v1728418629658!5m2!1sen!2s';
+      } else if (address.includes('IKHLAS MALL')) {
+        mapUrl =
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3367.385469672811!2d73.57681257464684!3d32.43561550135675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391f6748fee1fa53%3A0x97591c8189658699!2sAl%20Ikhlas%20Shopping%20Mall%26Mart!5e0!3m2!1sen!2s!4v1728418844222!5m2!1sen!2s';
+      } else if (address.includes('ALKARAM FABRIC TALAB BAZAR')) {
+        mapUrl =
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3420.9566904783555!2d72.4779103245793!3d30.97169077404665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39230fd1e7169547%3A0xf0ecdcdb3f9b5c44!2sThe%20Al-Karam%20Fabrics!5e0!3m2!1sen!2s!4v1728418911087!5m2!1sen!2s';
+      } else if (address.includes('NEAR NBP, OPP. GPO GUJRAT ROAD')) {
+        mapUrl =
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.252352886732!2d74.06995127467223!3d32.97074337406233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391fb04bf54004f3%3A0xb865d40b38a6fb76!2sNational%20Bank%20of%20Pakistan%20-%20Main%20Branch!5e0!3m2!1sen!2s!4v1728419079396!5m2!1sen!2s';
+      } else if (address.includes('MARYAM CHOWK BHIMBER ROAD')) {
+        mapUrl =
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53789.03040780991!2d74.00027852167968!3d32.5844735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391f1b8e1847ae17%3A0x24895831fd97a740!2sMaryam%20Skin%20and%20Aesthetic%20Clinic%20Gujrat%20by%20Dr.Maryam%20Qayyum!5e0!3m2!1sen!2s!4v1728419151677!5m2!1sen!2s';
+      } else if (address.includes('MILLENNIUM MALL')) {
+        mapUrl =
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531041.877959508!2d62.40607908749999!3d30.200466899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ed2df1c365519e9%3A0x82c4609c642a65d3!2sMOTIFZ!5e0!3m2!1sen!2s!4v1728419208198!5m2!1sen!2s';
+      } else if (address.includes('REHAN AKBAR PLAZA')) {
+        mapUrl =
+          'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d528.6813407930795!2d73.43125093455915!3d30.802682878205687!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3922a73ce291cdd7%3A0x442c49d2ed0cc4f9!2sPSO%20Petroleum%20Pump%20(Din%20Filling%20Station)!5e0!3m2!1sen!2s!4v1732874581884!5m2!1sen!2s';
+      }
+
+      // Update the iframe src to the new map URL
+      mapIframe.src = mapUrl;
+    }
+
+    // Add event listeners to all location elements
+    locations.forEach(function (location) {
+      location.addEventListener('click', function () {
+        const nextElement = location.nextElementSibling;
+        if (nextElement && nextElement.tagName === 'P') {
+          const address = nextElement.textContent.trim();
+          updateMap(address);
+          console.log(address);
+        }
+      });
+    });
+  });
+</script>
+{% schema %}
+{
+  "name": "Faq",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "page_title_enable",
+      "label": "Show page title"
+    },
+    {
+      "type": "checkbox",
+      "id": "page_content_enable",
+      "label": "Show page content"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "map",
+      "name": "Map",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Rich text"
+        }
+      ]
+    },
+    {
+      "type": "question",
+      "name": "Question",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Question",
+          "default": "Frequently asked question"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text",
+          "default": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

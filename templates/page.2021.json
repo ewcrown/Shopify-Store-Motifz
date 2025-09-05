@@ -1,0 +1,191 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "ew_lookbook_section_UQ7eat": {
+      "type": "ew-lookbook-section",
+      "blocks": {
+        "image_1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2021_Amal_Lawn_Vol_1.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2021_Amal_Lawn_Vol_1.pdf?v=1639642148"
+          }
+        },
+        "image_2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2021_Amal_Lawn_Vol_2.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2021_Amal_Lawn_Vol_2.pdf?v=1639642148"
+          }
+        },
+        "image_3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2021_Amal_Lawn_Vol_3.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2021_Amal_Lawn_Vol_3.pdf?v=1639642148"
+          }
+        },
+        "image_4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2021_Chiffon_Vol_1.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2021_Chiffon_Vol_1.pdf?v=1639642147"
+          }
+        },
+        "image_5": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2021_Chiffon_Vol_3.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2021_Chiffon_Vol_3.pdf?v=1639642147"
+          }
+        },
+        "image_6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2021_Khaddar_Vol_1.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2021_Khaddar_Vol_1.pdf?v=1639642148"
+          }
+        },
+        "image_7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2021_Luxury_Vol_1-1.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2021_Luxury_Vol_1.pdf?v=1639642149"
+          }
+        },
+        "image_8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2021_Premium_Cotton_Satin_Vol_1.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2021_Premium_Cotton_Satin_Vol_1_compressed.pdf?v=1639643848"
+          }
+        },
+        "image_9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2021_Premium_Lawn_Vol_1.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2021_Premium_Lawn_Vol_1_compressed.pdf?v=1639643848"
+          }
+        },
+        "image_10": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2021_Premium_Winter_Vol_1.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2021_Premium_Winter_Vol_1.pdf?v=1639642538"
+          }
+        },
+        "image_11": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2021_Rang_Khaddar_Vol_1.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2021_Rang_Khaddar_Vol_1.pdf?v=1639642538"
+          }
+        },
+        "image_12": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2021_Rang_Lawn_Vol_1.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2021_Rang_Lawn_Vol_1.pdf?v=1639642538"
+          }
+        },
+        "image_13": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2021_Rang_Lawn_Vol_2.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2021_Rang_Lawn_Vol_2.pdf?v=1639642539"
+          }
+        },
+        "image_14": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2021_Rang_Linen_Vol_1.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2021_Rang_Linen_Vol_1.pdf?v=1639642538"
+          }
+        },
+        "image_15": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2021_Umang_Lawn_Vol_1.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2021_Umang_Lawn_Vol_1_compressed.pdf?v=1639643536"
+          }
+        },
+        "image_16": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2021_Umang_Lawn_Vol_2.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2021_Umang_Lawn_Vol_2_compressed.pdf?v=1639643536"
+          }
+        },
+        "image_17": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2021_Umang_Winter_Vol_1.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2021_Umang_Winter_Vol_1.pdf?v=1639643116"
+          }
+        },
+        "image_18": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2021_Umang_Winter_Vol_2.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2021_Umang_Winter_Vol_2_compressed.pdf?v=1639643327"
+          }
+        },
+        "image_19": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2021_Umang_Winter_Vol_3.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2021_Umang_Winter_Vol_3.pdf?v=1639643116"
+          }
+        },
+        "image_20": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2021_Jacquard_Vol_1.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2021_Jacquard_Vol_1_compressed.pdf?v=1639676774"
+          }
+        }
+      },
+      "block_order": [
+        "image_1",
+        "image_2",
+        "image_3",
+        "image_4",
+        "image_5",
+        "image_6",
+        "image_7",
+        "image_8",
+        "image_9",
+        "image_10",
+        "image_11",
+        "image_12",
+        "image_13",
+        "image_14",
+        "image_15",
+        "image_16",
+        "image_17",
+        "image_18",
+        "image_19",
+        "image_20"
+      ],
+      "name": "Linked image grid",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "ew_lookbook_section_UQ7eat"
+  ]
+}

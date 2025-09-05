@@ -1,0 +1,135 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "ew_lookbook_section_UQ7eat": {
+      "type": "ew-lookbook-section",
+      "blocks": {
+        "image_drrYeH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2025_540x_50d20acf-e7bf-41d6-90ca-8f7703b00aaf.jpg",
+            "link": "shopify://pages/2025"
+          }
+        },
+        "image_3fqnGF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2024_540x_42423522-af1e-452c-b8ae-33a62451d498.jpg",
+            "link": "shopify://pages/2024"
+          }
+        },
+        "image_fLctq4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2023_540x_ec85bc0f-d1c1-4522-9252-fb2dd7ca22c6.jpg",
+            "link": "shopify://pages/2023"
+          }
+        },
+        "image_fzXVp3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2022_540x_ebc2270a-4469-49d6-97ca-080614299d0a.jpg",
+            "link": "shopify://pages/2022"
+          }
+        },
+        "image_f4WF86": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2021_540x_8f9cb951-044a-4416-a697-38893bf378c9.jpg",
+            "link": "shopify://pages/2021"
+          }
+        },
+        "image_cKrX73": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2020_540x_77cd9134-6449-46dc-bdcd-bb3aa8be137e.jpg",
+            "link": "shopify://pages/2020"
+          }
+        },
+        "image_b9WG7W": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2019_540x_926f3770-2f9a-4eb3-8722-88a8a6e74007.jpg",
+            "link": "shopify://pages/2019"
+          }
+        },
+        "image_wfQEYp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2018_540x_276932dc-55af-4749-85a7-43e5b0b8d634.jpg",
+            "link": "shopify://pages/2018"
+          }
+        },
+        "image_wRLyz6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2017_540x_8890bba9-a68f-4877-b3c1-8c3c037312cc.jpg",
+            "link": "shopify://pages/2017"
+          }
+        },
+        "image_d74gyi": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2016_540x_b1d3a364-da21-43cd-851f-1451c5b0866c.jpg",
+            "link": "shopify://pages/2016"
+          }
+        },
+        "image_YDQeRg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2015_540x_83f7cbe5-f23d-4a42-98c8-51b3e777798d.jpg",
+            "link": "shopify://pages/2015"
+          }
+        },
+        "image_gXXYmF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2014_540x_0076b479-327f-4032-9029-4139c70f6b5d.jpg",
+            "link": "shopify://pages/2014"
+          }
+        },
+        "image_qUqLE9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2013_540x_492c5cf3-67e4-435d-9786-d5bc082a3cc2.jpg",
+            "link": "shopify://pages/2013"
+          }
+        }
+      },
+      "block_order": [
+        "image_drrYeH",
+        "image_3fqnGF",
+        "image_fLctq4",
+        "image_fzXVp3",
+        "image_f4WF86",
+        "image_cKrX73",
+        "image_b9WG7W",
+        "image_wfQEYp",
+        "image_wRLyz6",
+        "image_d74gyi",
+        "image_YDQeRg",
+        "image_gXXYmF",
+        "image_qUqLE9"
+      ],
+      "name": "Linked image grid",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "ew_lookbook_section_UQ7eat"
+  ]
+}

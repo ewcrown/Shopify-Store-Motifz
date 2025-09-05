@@ -106,7 +106,7 @@
           "type": "collection",
           "settings": {
             "image": "shopify://shop_images/Casual_Pret.png",
-            "collection": "pret",
+            "collection": "embroidered-casuals",
             "title": "CAsual Pret",
             "focal_point": "center center"
           }
@@ -115,7 +115,7 @@
           "type": "link",
           "settings": {
             "image": "shopify://shop_images/Coture_Web_Circle.png",
-            "link": "shopify://collections/amal-lawn",
+            "link": "shopify://collections/couture",
             "title": "couture",
             "focal_point": "center center"
           }

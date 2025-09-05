@@ -46,7 +46,7 @@
         "logo": {
           "type": "logo",
           "settings": {
-            "logo": "shopify://shop_images/Final_Logo_Motifz_for_web_37f34449-87b2-4eea-ba93-46872b303f77.png",
+            "logo": "shopify:\/\/shop_images\/Final_Logo_Motifz_for_web_37f34449-87b2-4eea-ba93-46872b303f77.png",
             "desktop_logo_width": 160,
             "mobile_logo_width": 120
           }

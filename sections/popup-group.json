@@ -21,13 +21,15 @@
           "settings": {}
         }
       },
-      "block_order": ["reminder-block"],
+      "block_order": [
+        "reminder-block"
+      ],
       "settings": {
         "disable_for_account_holders": true,
         "popup_seconds": 5,
         "popup_days": 30,
         "popup_title": "Save 10% off your first purchase",
-        "popup_text": "<p>Sign up today and we&#x27;ll send you a 10% discount code towards your first purchase.</p>",
+        "popup_text": "<p>Sign up today and we&#x27;ll send you a 10% discount code towards your first purchase.<\/p>",
         "image_position": "left",
         "show_social_icons": false,
         "enable_newsletter": true,
@@ -41,5 +43,8 @@
       "settings": {}
     }
   },
-  "order": ["newsletter-popup", "age-verification-popup"]
+  "order": [
+    "newsletter-popup",
+    "age-verification-popup"
+  ]
 }

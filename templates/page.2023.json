@@ -1,0 +1,215 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "ew_lookbook_section_UQ7eat": {
+      "type": "ew-lookbook-section",
+      "blocks": {
+        "image_1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2023_Jacquard_Vol_1.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2023_Jacquard_Vol_1.pdf?v=1679586770"
+          }
+        },
+        "image_2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2023_Rang_Khaddar_Vol_4.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2023_Rang_Khaddar_Vol_4.pdf?v=1699940700"
+          }
+        },
+        "image_3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2023_Umang_Winter_Vol_1.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2023_Umang_Winter_Vol_1.pdf?v=1698719680"
+          }
+        },
+        "image_4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2023_Rang_Khaddar_Vol_3.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2023_Rang_Khaddar_Vol_3.pdf?v=1698369499"
+          }
+        },
+        "image_5": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2023_Premium_Winter_Vol_2.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2023_Premium_Winter_Vol_2.pdf?v=1698061182"
+          }
+        },
+        "image_6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2023_Rang_Khaddar_Vol_2.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2023_Rang_Khaddar_Vol_2.pdf?v=1696564988"
+          }
+        },
+        "image_7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2023_Premium_Winter_Vol_1.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2023_Premium_Winter_Vol_1.pdf?v=1696081037"
+          }
+        },
+        "image_8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2023_Rang_Khaddar_Vol_1.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2023_Rang_Khaddar_Vol_1.pdf?v=1695616795"
+          }
+        },
+        "image_9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2023_Schiffli_Chiffon_Vol_1.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2023_Schiffli_Chiffon_Vol_1.pdf?v=1733717766"
+          }
+        },
+        "image_10": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2023_Chiffon_Vol_2.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2023_Chiffon_Vol_2.pdf?v=1692844561"
+          }
+        },
+        "image_11": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Premium_Lawn_23_Vol_3.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/Premium_Lawn_23_Vol_3.pdf?v=1694428931"
+          }
+        },
+        "image_12": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2023_Soha_Lawn_Vol_1.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2023_Soha_Lawn_Vol_1.pdf?v=1685849354"
+          }
+        },
+        "image_13": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2023_Rang_Lawn_Vol_4.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2023_Rang_Lawn_Vol_4.pdf?v=1684489623"
+          }
+        },
+        "image_14": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2023_Amal_Lawn_Vol_1.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2023_Amal_Lawn_Vol_1.pdf?v=1684988047"
+          }
+        },
+        "image_15": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2023_Rang_Lawn_Vol_6.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2023_Rang_Lawn_Vol_6.pdf?v=1684489624"
+          }
+        },
+        "image_16": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2023_Umang_Lawn_Vol_3.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2023_Umang_Lawn_Vol_3.pdf?v=1679024709"
+          }
+        },
+        "image_17": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2023_Premium_Lawn_Vol_2.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2023_Premium_Lawn_Vol_2.pdf?v=1679930909"
+          }
+        },
+        "image_18": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2023_Umang_Lawn_Vol_2.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2023_Umang_Lawn_Vol_2.pdf?v=1678102403"
+          }
+        },
+        "image_19": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2023_Rang_Lawn_Vol_2.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2023_Rang_Lawn_Vol_2.pdf?v=1679486059"
+          }
+        },
+        "image_20": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2023_Premium_Lawn_Vol_1.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2023_Premium_Lawn_Vol_1.pdf?v=1677163132"
+          }
+        },
+        "image_21": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2023_Chiffon_Vol_1.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2023_Chiffon_Vol_1.pdf?v=1678170220"
+          }
+        },
+        "image_22": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2023_Umang_Lawn_Vol_1.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2023_Umang_Lawn_Vol_1.pdf?v=1677555526"
+          }
+        },
+        "image_23": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2023_Rang_Lawn_Vol_1.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2023_Rang_Lawn_Vol_1.pdf?v=1678346187"
+          }
+        }
+      },
+      "block_order": [
+        "image_1",
+        "image_2",
+        "image_3",
+        "image_4",
+        "image_5",
+        "image_6",
+        "image_7",
+        "image_8",
+        "image_9",
+        "image_10",
+        "image_11",
+        "image_12",
+        "image_13",
+        "image_14",
+        "image_15",
+        "image_16",
+        "image_17",
+        "image_18",
+        "image_19",
+        "image_20",
+        "image_21",
+        "image_22",
+        "image_23"
+      ],
+      "name": "Linked image grid",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "ew_lookbook_section_UQ7eat"
+  ]
+}

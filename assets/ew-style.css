@@ -145,7 +145,20 @@
 }
 
 @media(max-width:600px) {
-
+.newsletter-section__content .newsletter__input-group {
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+}
+.newsletter-section__content .input-group-btn button{
+    width: 100%;
+}
+.newsletter-section__content .enlarge-text {
+    font-size: 16px;
+}
+.newsletter-section__content {
+    padding: 0;
+}
     .grid-product__wrapper .grid-product__title {
         font-size: 11px;
         overflow: hidden;
@@ -568,9 +581,10 @@ body {
     .background-media-text__video {
         height: auto;
     }
+
     #FilterDrawer {
-    width: 80% !important;
-}
+        width: 80% !important;
+    }
 }
 
 .collection-image--square {
@@ -579,9 +593,60 @@ body {
 }
 
 .collection-image img {
-        object-position: top !important;
+    object-position: top !important;
 
 }
+
 #FilterDrawer {
     width: 20%;
+}
+
+.g-container {
+    position: relative;
+    z-index: 1;
+}
+
+.faqs-maps {
+    display: inline-flex;
+    width: 100%;
+    gap: 30px;
+    padding: 75px 40px;
+}
+
+.branch-title {
+    position: relative;
+}
+
+.branch-title h2 {
+    padding: 10px 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.branch {
+    display: none;
+    padding: 0 10px;
+}
+
+.branch p {
+    font-size: 12px;
+}
+
+.branch .location {
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.branch.active {
+    display: block;
+}
+
+@media (max-width: 786px) {
+    .faqs-maps {
+        flex-direction: column-reverse;
+        padding: 17px;
+    }
 }

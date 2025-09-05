@@ -112,7 +112,7 @@
           "settings": {
             "heading": "Black friday sale",
             "heading_size": "h1",
-            "text": "<p>30% off all summer dresses</p>",
+            "text": "<p>30% off all summer dresses<\/p>",
             "content_alignment": "left"
           }
         },

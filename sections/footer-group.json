@@ -24,7 +24,7 @@
         "text_rGMPCC": {
           "type": "text",
           "settings": {
-            "text": "<p>Sign up to our newsletter and be the first to know about exclusive offers, product launches and more.</p>"
+            "text": "<p>Sign up to our newsletter and be the first to know about exclusive offers, product launches and more.<\/p>"
           }
         },
         "form_ANJrzn": {
@@ -64,7 +64,7 @@
             "enable_image": true,
             "image_mask": "landscape",
             "title": "Summer 2022 release",
-            "text": "<p>Our latest breezy looks just in time for summer. Just in time for more fun in the sun.</p>",
+            "text": "<p>Our latest breezy looks just in time for summer. Just in time for more fun in the sun.<\/p>",
             "button_label": "Shop now",
             "button_link": ""
           }
@@ -75,9 +75,9 @@
             "enable_image": true,
             "image_mask": "landscape",
             "title": "New Encinitas store",
-            "text": "<p>Try out all your favourite looks at our new flagship store in Encinitas, California.</p>",
+            "text": "<p>Try out all your favourite looks at our new flagship store in Encinitas, California.<\/p>",
             "button_label": "View map",
-            "button_link": "https://maps.google.com/?daddr=Encinitas,%20California"
+            "button_link": "https:\/\/maps.google.com\/?daddr=Encinitas,%20California"
           }
         },
         "promotion-3": {
@@ -86,7 +86,7 @@
             "enable_image": true,
             "image_mask": "landscape",
             "title": "Save 10% on dresses",
-            "text": "<p>Sun protection doesn't have to be a hassle — add a whole new layer to your style. </p>",
+            "text": "<p>Sun protection doesn't have to be a hassle — add a whole new layer to your style. <\/p>",
             "button_label": "Shop dresses",
             "button_link": ""
           }
@@ -110,7 +110,7 @@
           "settings": {
             "show_footer_title": true,
             "title": "Contact Us",
-            "text": "<p><strong>Motifz Head Office</strong><br/>19 Km Off Ferozpur Road Lahore</p><p>UAN: <a href=\"tel:+92(0)42-111-668-439\" target=\"_blank\" title=\"tel:+92(0)42-111-668-439\">+92(0)42-111-668-439</a></p><p>Wa: <a href=\"https://web.whatsapp.com/send?phone=92042111668439\" target=\"_blank\" title=\"https://web.whatsapp.com/send?phone=92042111668439\">+92(0)42-111-668-439</a></p>",
+            "text": "<p><strong>Motifz Head Office<\/strong><br\/>19 Km Off Ferozpur Road Lahore<\/p><p>UAN: <a href=\"tel:+92(0)42-111-668-439\" target=\"_blank\" title=\"tel:+92(0)42-111-668-439\">+92(0)42-111-668-439<\/a><\/p><p>Wa: <a href=\"https:\/\/web.whatsapp.com\/send?phone=92042111668439\" target=\"_blank\" title=\"https:\/\/web.whatsapp.com\/send?phone=92042111668439\">+92(0)42-111-668-439<\/a><\/p>",
             "container_width": 25
           }
         },
@@ -119,7 +119,7 @@
           "settings": {
             "show_footer_title": true,
             "title": "RESELLERS",
-            "text": "<p>For Franchise Dial<br/><a href=\"https://web.whatsapp.com/send?phone=923477702601\" target=\"_blank\" title=\"https://web.whatsapp.com/send?phone=923477702601\">+92-330-0118260</a></p><p>For Wholesale Dial<br/><a href=\"https://web.whatsapp.com/send?phone=923422222253\" target=\"_blank\" title=\"https://web.whatsapp.com/send?phone=923422222253\">+92-342-2222253</a></p>",
+            "text": "<p>For Franchise Dial<br\/><a href=\"https:\/\/web.whatsapp.com\/send?phone=923477702601\" target=\"_blank\" title=\"https:\/\/web.whatsapp.com\/send?phone=923477702601\">+92-330-0118260<\/a><\/p><p>For Wholesale Dial<br\/><a href=\"https:\/\/web.whatsapp.com\/send?phone=923422222253\" target=\"_blank\" title=\"https:\/\/web.whatsapp.com\/send?phone=923422222253\">+92-342-2222253<\/a><\/p>",
             "container_width": 18
           }
         },

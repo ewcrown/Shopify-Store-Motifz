@@ -1,0 +1,215 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "ew_lookbook_section_UQ7eat": {
+      "type": "ew-lookbook-section",
+      "blocks": {
+        "image_1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/25-Bridal-01.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/25-Bridal-01.pdf?v=1738251197"
+          }
+        },
+        "image_2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/25-Prem-Lawn-03.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/25-Prem-Lawn-03.pdf?v=1752727231"
+          }
+        },
+        "image_3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/25-Umang-Lawn-03.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/25-Umang-Lawn-03.pdf?v=1750483572"
+          }
+        },
+        "image_4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/25-Prem-Lawn-02.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/25-Prem-Lawn-02.pdf?v=1746076732"
+          }
+        },
+        "image_5": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/25-Amal-Lawn-02.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/25-Amal-Lawn-02.pdf?v=1747108829"
+          }
+        },
+        "image_6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/25-Bemberg-01.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/25-Bemberg-01.pdf?v=1747377780"
+          }
+        },
+        "image_7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/25-Prem-Lawn-01.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/25-Prem-Lawn-01.pdf?v=1739179478"
+          }
+        },
+        "image_8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/25-Luxury-01.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/25-Luxury-01.pdf?v=1738251194"
+          }
+        },
+        "image_9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/25-Amal-Lawn-01.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/25-Amal-Lawn-01.pdf?v=1741165148"
+          }
+        },
+        "image_10": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/25-Rang-08.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/25-Rang-08.pdf?v=1753458369"
+          }
+        },
+        "image_11": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/25-Classic-07.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/25-Classic-07.pdf?v=1753850374"
+          }
+        },
+        "image_12": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/25-Rang-07.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/25-Rang-07.pdf?v=1745295551"
+          }
+        },
+        "image_13": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/25-Rang-06.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/25-Rang-06.pdf?v=1742014555"
+          }
+        },
+        "image_14": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/25-Rang-05.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/25-Rang-05.pdf?v=1742014554"
+          }
+        },
+        "image_15": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/25-Rang-04.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/25-Rang-04.pdf?v=1740721461"
+          }
+        },
+        "image_16": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/25-Rang-03.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/25-Rang-03.pdf?v=1740721462"
+          }
+        },
+        "image_17": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/25-Umang-Lawn-02.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/25-Umang-Lawn-02.pdf?v=1740226248"
+          }
+        },
+        "image_18": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/25-Umang-Lawn-01.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/25-Umang-Lawn-01.pdf?v=1740226249"
+          }
+        },
+        "image_19": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/25-Rang-02.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/25-Rang-02.pdf?v=1738667354"
+          }
+        },
+        "image_20": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/25-Rang-01.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/25-Rang-01.pdf?v=1738667354"
+          }
+        },
+        "image_21": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/25-Zohra-Lawn-03.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/25-Zohra-Lawn-03.pdf?v=1741678801"
+          }
+        },
+        "image_22": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/25-Zohra-Lawn-02.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/25-Zohra-Lawn-02.pdf?v=1741678802"
+          }
+        },
+        "image_23": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/25-Zohra-Lawn-01.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/25-Zohra-Lawn-01.pdf?v=1741691869"
+          }
+        }
+      },
+      "block_order": [
+        "image_1",
+        "image_2",
+        "image_3",
+        "image_4",
+        "image_5",
+        "image_6",
+        "image_7",
+        "image_8",
+        "image_9",
+        "image_10",
+        "image_11",
+        "image_12",
+        "image_13",
+        "image_14",
+        "image_15",
+        "image_16",
+        "image_17",
+        "image_18",
+        "image_19",
+        "image_20",
+        "image_21",
+        "image_22",
+        "image_23"
+      ],
+      "name": "Linked image grid",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "ew_lookbook_section_UQ7eat"
+  ]
+}

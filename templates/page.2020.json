@@ -1,0 +1,151 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "ew_lookbook_section_UQ7eat": {
+      "type": "ew-lookbook-section",
+      "blocks": {
+        "image_1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2020_Amal_Lawn_Vol_1.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2020_Amal_Lawn_Vol_1.pdf?v=1639645092"
+          }
+        },
+        "image_2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2020_Chiffon_Vol_1.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2020_Chiffon_Vol_1.pdf?v=1639645092"
+          }
+        },
+        "image_3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2020_Chiffon_Vol_2.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2020_Chiffon_Vol_2.pdf?v=1639645092"
+          }
+        },
+        "image_4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2020_Chiffon_Vol_3.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2020_Chiffon_Vol_3.pdf?v=1639645092"
+          }
+        },
+        "image_5": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2020_Luxury_Vol_1.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2020_Luxury_Vol_1.pdf?v=1639645092"
+          }
+        },
+        "image_6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2020_Premium_Cotton_Satin_Vol_1.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2020_Premium_Cotton_Satin_Vol_1.pdf?v=1639645093"
+          }
+        },
+        "image_7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2020_Premium_Lawn_Vol_1.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2020_Premium_Lawn_Vol_1_compressed.pdf?v=1639648944"
+          }
+        },
+        "image_8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2020_Premium_Lawn_Vol_2.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2020_Premium_Lawn_Vol_2.pdf?v=1639645092"
+          }
+        },
+        "image_9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2020_Premium_Winter_Vol_1.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2020_Premium_Winter_Vol_1.pdf?v=1639645093"
+          }
+        },
+        "image_10": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2020_Rang_Lawn_Vol_1.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2020_Rang_Lawn_Vol_1_compressed.pdf?v=1639648944"
+          }
+        },
+        "image_11": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2020_Rang_Lawn_Vol_2.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2020_Rang_Lawn_Vol_2_compressed.pdf?v=1639648945"
+          }
+        },
+        "image_12": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2020_Umang_Lawn_Vol_1.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2020_Umang_Lawn_Vol_1_compressed.pdf?v=1639648945"
+          }
+        },
+        "image_13": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2020_Umang_Lawn_Vol_2.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2020_Umang_Lawn_Vol_2_compressed.pdf?v=1639648945"
+          }
+        },
+        "image_14": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2020_Umang_Winter_Vol_1.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2020_Umang_Winter_Vol_1_compressed.pdf?v=1639648944"
+          }
+        },
+        "image_15": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2020_Umang_Winter_Vol_2.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/2020_Umang_Winter_Vol_2.pdf?v=1639645093"
+          }
+        }
+      },
+      "block_order": [
+        "image_1",
+        "image_2",
+        "image_3",
+        "image_4",
+        "image_5",
+        "image_6",
+        "image_7",
+        "image_8",
+        "image_9",
+        "image_10",
+        "image_11",
+        "image_12",
+        "image_13",
+        "image_14",
+        "image_15"
+      ],
+      "name": "Linked image grid",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "ew_lookbook_section_UQ7eat"
+  ]
+}
