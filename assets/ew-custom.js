@@ -257,7 +257,7 @@ document.addEventListener('DOMContentLoaded', () => {
     lastActiveTrigger = trigger;
 
     try {
-      const res = await fetch(`/products/${handle}?view=quickview`, {
+      const res = await fetch(`/products/${handle}`, {
         headers: { 'X-Requested-With': 'XMLHttpRequest' }
       });
       const html = await res.text();
