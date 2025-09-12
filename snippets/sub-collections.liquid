@@ -7,30 +7,81 @@
     endif
     render 'products_per_row', products_per_row: products_per_row, style: 'fractions'
   endcapture
+
+  assign slider_id = section.id | default: 'subcollections'
+  assign space_between = 16
+  if settings.collection_grid_gutter == false
+    assign space_between = 0
+  endif
 -%}
 
-<div class="grid grid--uniform{% unless settings.collection_grid_gutter %} grid--no-gutters{% endunless %}">
-  {%- for sub_collection_link in sub_collection_links -%}
-    {%- if sub_collection_link.url contains '/collections/' -%}
-      {%- liquid
-        assign sub_collection_split = sub_collection_link.url | split: '/'
-        assign sub_collection_handle = sub_collection_split | last
-        assign sub_collection = collections[sub_collection_handle]
-      -%}
+{%- comment -%}
+  Include Swiper assets once in your theme (recommended: add these to theme.liquid or a dedicated asset).
+  If you’ve uploaded local copies named swiper-bundle.min.css/js to Assets, these tags will work as-is.
+  Otherwise, swap to your preferred CDN.
+{%- endcomment -%}
 
-      {%- if sub_collection != blank -%}
-        {%- unless parent_url == sub_collection.url -%}
-          {%- render 'collection-grid-item',
-            collection: sub_collection,
-            gridView: gridView,
-            collection_title: sub_collection_link.title
-            per_row: per_row,
-            sizeVariable: gridView,
-            fallback: 'variable',
+<div id="subcoll-{{ slider_id }}" class="subcoll-swiper-wrapper">
+  <div class="swiper sub-collections-swiper-{{ slider_id }}">
+    <div class="swiper-wrapper">
+      {%- for sub_collection_link in sub_collection_links -%}
+        {%- if sub_collection_link.url contains '/collections/' -%}
+          {%- liquid
+            assign sub_collection_split = sub_collection_link.url | split: '/'
+            assign sub_collection_handle = sub_collection_split | last
+            assign sub_collection = collections[sub_collection_handle]
           -%}
-        {%- endunless -%}
-      {%- endif -%}
-    {%- endif -%}
-  {%- endfor -%}
+
+          {%- if sub_collection != blank -%}
+            {%- unless parent_url == sub_collection.url -%}
+              <div class="swiper-slide">
+                {%- render 'collection-grid-item',
+                  collection: sub_collection,
+                  gridView: gridView,
+                  collection_title: sub_collection_link.title,
+                  per_row: per_row,
+                  sizeVariable: gridView,
+                  fallback: 'variable'
+                -%}
+              </div>
+            {%- endunless -%}
+          {%- endif -%}
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+
+    <!-- Pagination + Nav -->
+    <div class="swiper-pagination sub-collections-pagination-{{ slider_id }}"></div>
+    <div class="swiper-button-prev sub-collections-prev-{{ slider_id }}"></div>
+    <div class="swiper-button-next sub-collections-next-{{ slider_id }}"></div>
+  </div>
 </div>
 
+<script defer>
+  document.addEventListener('DOMContentLoaded', function() {
+    if (typeof Swiper === 'undefined') return;
+
+    new Swiper('.sub-collections-swiper-{{ slider_id }}', {
+      slidesPerView: 2,
+      spaceBetween: {{ space_between | json }},
+      breakpoints: {
+        768:  { slidesPerView: 3 },
+        1024: { slidesPerView: {{ per_row | default: 4 | json }} }
+      },
+      // controls
+      pagination: false,
+      navigation: false,
+    });
+  });
+</script>
+
+<style>
+  /* Optional: tighten slide padding so cards look even inside slides */
+  #subcoll-{{ slider_id }} .swiper-slide {
+    height: auto; /* let the slide grow with its content */
+  }
+
+  /* If you previously relied on .grid gutters, Swiper spacing now uses spaceBetween above */
+  /* Hide nav when disabled */
+  #subcoll-{{ slider_id }} .swiper-button-disabled { opacity: .35; cursor: default; }
+</style>
