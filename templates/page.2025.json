@@ -177,10 +177,26 @@
             "image": "shopify:\/\/shop_images\/25-Zohra-Lawn-01.jpg",
             "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0356\/7950\/2474\/files\/25-Zohra-Lawn-01.pdf?v=1741691869"
           }
+        },
+        "image_24": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/25-Bemberg-02.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1/0356\/7950\/2474\/files\/25-Bemberg-02.pdf?v=1757485134"
+          }
+        },
+        "image_25": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/25-Bemberg-03.jpg",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1/0356\/7950\/2474\/files\/25-Bemberg-03.pdf?v=1757485132"
+          }
         }
       },
       "block_order": [
         "image_1",
+        "image_24",
+        "image_25",
         "image_2",
         "image_3",
         "image_4",

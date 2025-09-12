@@ -212,6 +212,13 @@
                         {%- endunless -%}
                       </span>
 
+                      {% # BaadMay Product Widget Start # %}
+                      {% assign max_limit = product.selected_or_first_available_variant.price | divided_by: 100 | times: 1 %}
+                      {% if max_limit <= 50000 %}
+                        {% render 'baadmay-product-widget', class: 'product-widget' %}
+                      {% endif %}
+                      {% # BaadMay Product Widget End # %}
+
                       {%- if settings.product_save_amount -%}
                         {%- if settings.product_save_type == 'dollar' -%}
                           {%- capture saved_amount -%}{{ current_variant.compare_at_price | minus: current_variant.price | money }}{%- endcapture -%}

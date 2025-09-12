@@ -46,6 +46,10 @@
             <div data-subtotal>{{ cart.total_price | money }}</div>
           </div>
 
+          {% # BaadMay Cart Widget %}
+          {% render 'baadmay-cart-widget', class: 'cartDrawer-widget' %}
+          {% # BaadMay Cart Widget %}
+
           <div class="cart__item-row text-center">
             <small>
               {{ 'cart.general.shipping_at_checkout' | t }}<br />

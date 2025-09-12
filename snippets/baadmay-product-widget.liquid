@@ -1,0 +1,272 @@
+<style>
+  .vbox-backdrop {
+    display: block !important;
+  }
+
+  .baadmaysvg {
+    fill: transparent !important;
+    stroke: transparent !important;
+  }
+
+  .baadmay-modal-container svg {
+    width: auto !important;
+    height: auto !important;
+    fill: transparent !important;
+    stroke: transparent !important;
+  }
+
+  .baadmaysvg {
+    visibility: visible;
+  }
+
+  .baadmay-gateway-wrapper.product-widget {
+    margin: 5px 0;
+  }
+
+  .product-widget .baadmay-modal .baadmaysvg {
+    width: 116px;
+    height: auto;
+  }
+
+  .product-widget .baadmay-para {
+    display: flex;
+    gap: 6px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .product-widget .baadmay-para .logo-wrapper {
+    display: flex;
+  }
+
+  .product-widget .baadmay-para .logo-wrapper .baadmay-modal {
+    display: inline-flex;
+  }
+
+  .product-widget .baadmay-para .baadmay-price {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    line-height: 1;
+    gap: 0 4px;
+  }
+
+  .product-widget .baadmay-para .baadmay-price p {
+    margin: 0;
+    line-height: 1;
+    color: #000;
+    font-size: 18px;
+  }
+
+  .product-widget .baadmay-para .baadmay-price .baadmay-currency,
+  .product-widget .baadmay-para .baadmay-price .baadmay-price-split .price-divide {
+    color: #6016eb;
+    font-weight: bold;
+  }
+
+  .product-widget .baadmay-para .baadmay-price a {
+    display: flex;
+    text-decoration: none;
+    gap: 1px;
+  }
+
+  .baadmay-popup-content svg {
+    width: auto;
+    height: auto;
+    fill: transparent;
+    stroke: transparent;
+  }
+
+  #quickview-modal .product-widget .baadmay-para .baadmay-price p {
+    font-size: 16px;
+  }
+
+  #quickview-modal .product-widget .baadmay-modal .baadmaysvg {
+    width: 95px;
+  }
+
+  @media screen and (max-width: 1290px) {
+    .product-single__meta {
+      padding-left: 0;
+    } 
+  }
+
+  @media only screen and (min-device-width: 769px) and (max-device-width: 1177px) {
+    .product-widget .baadmay-para {
+      flex-flow: column;
+      align-items: flex-start;
+    }
+  }
+
+  @media only screen and (min-device-width: 769px) and (max-device-width: 872px) {
+    .product-widget .baadmay-para .baadmay-price p {
+      font-size: 15px;
+    }
+    #quickview-modal .product-widget .baadmay-para .baadmay-price p {
+      font-size: 13px;
+    }
+    .product-widget .baadmay-modal .baadmaysvg {
+      width: 90px;
+    }
+    #quickview-modal .product-widget .baadmay-modal .baadmaysvg {
+      width: 85px;
+    }
+  }
+
+  @media screen and (max-width: 457px) {
+    .product-widget .baadmay-modal .baadmaysvg {
+      width: 95px;
+    }
+    .product-widget .baadmay-para .baadmay-price p {
+      font-size: 17px;
+    }
+  }
+
+  @media screen and (max-width: 424px) {
+    .product-widget .baadmay-modal .baadmaysvg {
+      width: 85px;
+    }
+    .product-widget .baadmay-para .baadmay-price p {
+      font-size: 14.5px;
+    }
+    .product-widget .baadmay-para {
+      gap: 4px;
+    }
+  }
+
+  @media screen and (max-width: 374px) {
+    .product-widget .baadmay-modal .baadmaysvg {
+      width: 78px;
+    }
+    .product-widget .baadmay-para .baadmay-price p {
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (max-width: 359px) {
+    .product-widget .baadmay-modal .baadmaysvg {
+      width: 70px;
+    }
+    .product-widget .baadmay-para .baadmay-price p {
+      font-size: 12px;
+    }
+  }
+</style>
+
+<div class="baadmay-gateway-wrapper{% if class != blank %} {{ class }}{% endif %}">
+  <div class="baadmay-para">
+    <div class="logo-wrapper">
+      <a
+        class="baadmay-modal"
+        data-vbtype="inline"
+        data-overlayclose="false"
+        data-maxwidth="620px"
+        href="#baadmay-content"
+      >
+        {% render 'baadmay-logo' %}
+      </a>
+    </div>
+    <div class="baadmay-price">
+      <p>Pay in 3 Installments of</p>
+      <a
+        class="baadmay-modal"
+        data-vbtype="inline"
+        data-overlayclose="false"
+        data-maxwidth="620px"
+        href="#baadmay-content"
+      >
+        <p class="baadmay-currency">
+          {% for currency in shop.enabled_currencies %}
+            {% if currency.iso_code == shop.currency -%}
+              Rs.{% break %}
+            {% endif %}
+          {% endfor %}
+        </p>
+        <p class="baadmay-price-split">
+          {% assign price = product.selected_or_first_available_variant.price %}
+          {% assign price_one_five = price | times: 1.15 %}
+          {% assign final_price = price_one_five | divided_by: 3 %}
+          <span
+            class="price-divide"
+            total-prod-price="{{ product.selected_or_first_available_variant.price | divided_by: 100 }}"
+          >
+            {{ final_price | money_without_currency | split: '.' | first }}
+          </span>
+        </p>
+      </a>
+    </div>
+    <div id="baadmay-content" style="display:none;">
+      <a href="javascript:;" class="baadmay-popup-close">
+        {% render 'cross-icon' %}
+      </a>
+      <div class="baadmay-popup-head">
+        <h3>Pay for your purchase, thora abhi, baqi?</h3>
+        {% render 'baadmay-logo-white' %}
+        <div class="baadmay-info-box">
+          <div class="baadmay-info-item">
+            {% render 'icon-calendar' %}
+            <p>Pay in 3 Easy Installments</p>
+          </div>
+        </div>
+      </div>
+      <div class="baadmay-popup-content">
+        <h3 class="baadmay-color-dark text-center mt-40 mb-24">Added items to your cart?</h3>
+        <div class="baadmay-info-box compact-box">
+          <div class="baadmay-info-item">
+            {% render 'icon-checkout' %}
+            <p>Select BaadMay at Checkout</p>
+          </div>
+          <div class="baadmay-info-item">
+            {% render 'icon-account-details' %}
+            <p>Verify your account details</p>
+          </div>
+          <div class="baadmay-info-item">
+            {% render 'icon-pay-first-installment' %}
+            <p>Pay only your first installment now</p>
+          </div>
+        </div>
+        <h3 class="baadmay-color-primary text-center mt-32 mt-sm-24 mb-0">Let’s shop and pay BaadMay !</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var domainShop = 'motifz-com-pk.myshopify.com';
+
+    function calculateProductInstallment() {
+      var storedData = sessionStorage.getItem('baadmayData');
+
+      if (storedData) {
+        processData(JSON.parse(storedData));
+      } else {
+        fetch('https://cms.baadmay.com/Fees?merchant_name=' + domainShop)
+          .then((response) => response.json())
+          .then((data) => {
+            sessionStorage.setItem('baadmayData', JSON.stringify(data));
+            processData(data);
+          })
+          .catch((error) => console.error('Error fetching data:', error));
+      }
+    }
+
+    function processData(result) {
+      var valAdd = result[0].fee;
+      var divVal = parseInt(valAdd) / 100;
+      sessionStorage.setItem('percentageAmount', divVal);
+      var perctoAddCartPage1 = sessionStorage.getItem('percentageAmount');
+
+      var priceDivideElement = document.querySelector('.price-divide');
+      if (priceDivideElement) {
+        var cartPageTotal1 = parseFloat(priceDivideElement.getAttribute('total-prod-price'));
+        var multiCartPrice1 = cartPageTotal1 * perctoAddCartPage1;
+        var finalCartPrice1 = Math.floor(parseFloat(cartPageTotal1 + multiCartPrice1) / 3);
+
+        priceDivideElement.textContent = parseFloat(finalCartPrice1).toLocaleString();
+      }
+    }
+
+    calculateProductInstallment();
+  });
+</script>

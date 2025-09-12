@@ -262,6 +262,13 @@ Arguments
             {%- endif -%}
           </div>
 
+          {% # BaadMay Collection Widget %}
+          {% comment %} {% assign max_limit = product.selected_or_first_available_variant.price | divided_by: 100 | times: 1 %}
+          {% if max_limit <= 50000 %}
+            {% render 'baadmay-collection-widget', product: product, class: 'collection-widget' %}
+          {% endif %} {% endcomment %}
+          {% # BaadMay Collection Widget %}
+        
           {%- if settings.enable_swatches and type == 'horizontal' -%}
             {%- liquid
               assign swatch_trigger = 'products.general.color_swatch_trigger' | t | downcase

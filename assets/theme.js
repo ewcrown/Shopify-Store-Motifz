@@ -1787,7 +1787,44 @@ theme.recentlyViewed = {
   
         // Update subtotal
         this.subtotal.innerHTML = theme.Currency.formatMoney(subtotal, theme.settings.moneyFormat);
-  
+
+        // BaadMay Cart Widget Price Update Code Start
+        const priceEls = document.querySelectorAll(".drawer__footer .cart__item-sub .money, .cart__page-col .cart__item-sub .money");
+
+        priceEls.forEach(el => {
+          let priceText = el.textContent.trim();
+
+          let cleanPrice = priceText.replace(/Rs\./i, "").replace(/PKR/i, "").replace(/,/g, "").trim().split(".")[0];
+
+          cleanPrice = parseInt(cleanPrice, 10);
+
+          if (!isNaN(cleanPrice)) {
+            const targetAttrs = document.querySelectorAll(".baadmay-cart baadmaypricerre[total-cart-price]");
+            targetAttrs.forEach(attrEl => {
+              attrEl.setAttribute("total-cart-price", cleanPrice);
+            });
+
+            let finalValue = (cleanPrice + (cleanPrice * 0.15)) / 3;
+            finalValue = Math.trunc(finalValue);
+            let formattedValue = finalValue.toLocaleString("en-US");
+
+            const targetTexts = document.querySelectorAll(".baadmay-cart baadmaypricerre");
+            targetTexts.forEach(textEl => {
+              textEl.textContent = formattedValue;
+            });
+
+            const carts = document.querySelectorAll(".baadmay-cart");
+            carts.forEach(cart => {
+              if (cleanPrice > 50000) {
+                cart.style.display = "none";
+              } else {
+                cart.style.display = "";
+              }
+            });
+          }
+        });
+        // BaadMay Cart Widget Price Update Code End
+
         this.reInit();
   
         if (window.AOS) { AOS.refreshHard() }
@@ -2454,6 +2491,25 @@ theme.recentlyViewed = {
     };
   
     Modal.prototype.open = function(evt) {
+      // BaadMay Quick View Modal Code Start
+      setTimeout(function() {
+        var venobox = new VenoBox({
+          selector: '.baadmay-modal',
+          closeColor: '#000',
+          closeBackground: 'transparent',
+          overlayColor: 'rgba(0,0,0,.75)',
+          overlayClose: false,
+          customClass: 'baadmay-modal-container',
+        });
+
+        document.addEventListener('click', function(event) {
+          if (event.target.classList.contains('baadmay-popup-close')) {
+            venobox.close();
+          }
+        });
+      }, 2000);
+      // BaadMay Quick View Modal Code End
+
       // Keep track if modal was opened from a click, or called by another function
       var externalCall = false;
   
@@ -3069,17 +3125,17 @@ theme.recentlyViewed = {
           var qty = this._getQty();
           this._change(qty + 1);
         }.bind(this));
-  
+        
         this.minus.addEventListener('click', function() {
           var qty = this._getQty();
           this._change(qty - 1);
         }.bind(this));
-  
+        
         this.input.addEventListener('change', function(evt) {
           this._change(this._getQty());
         }.bind(this));
       },
-  
+      
       _getQty: function() {
         var qty = this.input.value;
         if((parseFloat(qty) == parseInt(qty)) && !isNaN(qty)) {
@@ -3090,7 +3146,7 @@ theme.recentlyViewed = {
         }
         return parseInt(qty);
       },
-  
+      
       _change: function(qty) {
         if (qty <= this.minValue) {
           qty = this.minValue;

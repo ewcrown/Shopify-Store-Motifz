@@ -48,6 +48,14 @@
             <div data-subtotal>{{ cart.total_price | money }}</div>
           </div>
 
+          {% # BaadMay Cart Widget %}
+          {% assign max_limit = cart.items_subtotal_price | divided_by: 100 | times: 1 %}
+          {% if max_limit >= 50000 %}
+            {% assign is_hidden = true %}
+          {% endif %}
+          {% render 'baadmay-cart-widget', class: 'cartPage-widget', hide: is_hidden %}
+          {% # BaadMay Cart Widget %}
+          
           {% if settings.cart_terms_conditions_enable %}
             <div class="cart__item-row cart__terms">
               <input type="checkbox" id="CartTerms" class="cart__terms-checkbox">

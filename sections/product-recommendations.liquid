@@ -66,6 +66,26 @@
   </div>
 </product-recommendations>
 
+<script>
+  {% comment %} BaadMay Code Start {% endcomment %}
+  setTimeout(function () {
+    var venobox = new VenoBox({
+      selector: '.baadmay-modal',
+      closeColor: '#000',
+      closeBackground: 'transparent',
+      overlayColor: 'rgba(0,0,0,.75)',
+      overlayClose: false,
+      customClass: 'baadmay-modal-container',
+    });
+
+    document.addEventListener('click', function(event) {
+      if (event.target.classList.contains('baadmay-popup-close')) {
+        venobox.close();
+      }
+    });
+  }, 2000);
+</script>
+
 {% schema %}
 {
   "name": "t:sections.product-recommendations.name",

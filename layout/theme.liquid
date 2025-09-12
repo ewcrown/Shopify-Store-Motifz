@@ -96,8 +96,15 @@
     <script>theme.settings.email = {{ shop.email | json }}</script>
     <script src="https://api.archetypethemes.co/design-mode.js" defer="defer"></script>
   {% endif %}
-<!-- Swiper CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  {% # BaadMay CSS/JS Start %}
+  {{ 'baadmay-styles.css' | asset_url | preload_tag: as: 'style', type: 'text/css' }}
+  <link rel="stylesheet" href="{{ 'baadmay-styles.css' | asset_url }}">
+      
+  {{ 'baadmay-scripts.js' | asset_url | preload_tag: as: 'script', type: 'text/javascript' }}
+  <script src="{{ 'baadmay-scripts.js' | asset_url }}" defer></script>
+  {% # BaadMay CSS/JS End %}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 
 <body class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}{% if request.path == '/challenge' %} template-challange{% endif %}" data-center-text="{{ settings.type_body_align_text }}" data-button_style="{{ settings.button_style }}" data-type_header_capitalize="{{ settings.type_header_capitalize }}" data-type_headers_align_text="{{ settings.type_headers_align_text }}" data-type_product_capitalize="{{ settings.type_product_capitalize }}" data-swatch_style="{{ settings.swatch_style }}" {% if settings.disable_animations %}data-disable-animations="true"{% endif %}>
@@ -227,9 +234,6 @@
         return i;
       }
     </script>
-    <!-- Swiper JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>

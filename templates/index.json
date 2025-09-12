@@ -12,6 +12,25 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
+        "image_GwXLWD": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 64,
+            "subheading": "",
+            "link": "shopify://collections/formal",
+            "link_text": "",
+            "link_2": "shopify://collections/formal",
+            "link_text_2": "",
+            "color_accent": "#321004",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/Riwayat_Banner_Main.jpg",
+            "image_mobile": "shopify://shop_images/Mobile_Banner_Riwayat.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        },
         "image-1": {
           "type": "image",
           "settings": {
@@ -33,6 +52,7 @@
         }
       },
       "block_order": [
+        "image_GwXLWD",
         "image-1"
       ],
       "settings": {
