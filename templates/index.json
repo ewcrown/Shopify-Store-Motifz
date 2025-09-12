@@ -209,24 +209,6 @@
         "image_display": "contain"
       }
     },
-    "ew_hero_section_GiKMba": {
-      "type": "ew-hero-section",
-      "blocks": {
-        "qoute_8rKWYK": {
-          "type": "qoute",
-          "settings": {
-            "be_desktop_banner": "shopify://shop_images/Web_Banner2.jpg",
-            "be_mobile_banner": "shopify://shop_images/Web_Banner2.jpg",
-            "slide_link": "shopify://collections/sales"
-          }
-        }
-      },
-      "block_order": [
-        "qoute_8rKWYK"
-      ],
-      "name": "Custom Slideshow",
-      "settings": {}
-    },
     "product_story_sections_KNazdq": {
       "type": "pr-reels",
       "blocks": {
@@ -329,7 +311,6 @@
     "featured-collection",
     "ew_hero_section_m7U9t4",
     "collection_slider_Bte4nb",
-    "ew_hero_section_GiKMba",
     "product_story_sections_KNazdq"
   ]
 }
