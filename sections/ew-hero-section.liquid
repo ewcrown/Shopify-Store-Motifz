@@ -1,0 +1,102 @@
+{%- style -%}
+
+.he-img-responsive {
+	height:100%;
+	display:block;
+	max-width:100%;
+}
+
+.he-mobile {
+	display:none;
+}
+
+#he-slideshow-{{ section.id }} .swiper-wrapper img{
+	object-fit:cover;
+	width:100%;
+  cursor:pointer;
+}
+
+@media (max-width:767px){
+	.he-desktop {
+		display:none !important;
+	}
+	.he-mobile { 
+		display:block !important;
+	}
+}
+
+{%- endstyle -%}
+
+    <section class="he-slideshow" id="he-slideshow-{{ section.id }}">
+        <div class="he-top-slider-row">
+            <!----- Swiper Slider Start ------->
+            <div class="swiper heTopSlider heTopSlider-{{ section.id | handleize }}">
+                <div class="swiper-wrapper">
+                  
+                  {% for be_slideshow in section.blocks %}
+                    <div class="swiper-slide">
+                      <a href="{{ be_slideshow.settings.slide_link }}">
+                      {% if be_slideshow.settings.be_desktop_banner != blank %}
+						<img src="{{ be_slideshow.settings.be_desktop_banner | img_url:'master' }}" class="he-img-responsive he-desktop" />
+                      {% endif  %}
+                      
+                      {% if be_slideshow.settings.be_mobile_banner != blank %}
+                        <img src="{{ be_slideshow.settings.be_mobile_banner | img_url:'master' }}" class="he-img-responsive he-mobile" />
+                      {% endif %}
+                      </a>
+                    </div>
+                  {% endfor %}
+                  
+                </div>
+            </div>
+            <!----- Swiper Slider End ------->
+        </div>
+    </section>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+const heTopSlider = new Swiper(".heTopSlider-{{ section.id | handleize }}", {
+  autoplay: {
+    delay: 3000,
+  },
+  loop: true,
+});
+})
+</script>
+
+{% schema %}
+  {
+    "name": "Custom Slideshow",
+    "settings": [],
+	"blocks":[
+		{
+			"name":"SlideShow",
+			"type":"qoute",
+			"settings":[
+                {
+                 "type":"image_picker",
+                 "id":"be_desktop_banner",
+                 "label":"Desktop Banner"
+                },
+                {
+                 "type":"image_picker",
+                 "id":"be_mobile_banner",
+                 "label":"Mobile Banner"
+                },
+				{
+					"type":"url",
+					"id":"slide_link",
+					"label":"Slide Link"
+				}
+			]
+		}	
+	],
+	"presets":[
+		{
+			"name":"Custom Slideshow",
+			"category":"custom"
+		}
+	]
+  }
+{% endschema %}

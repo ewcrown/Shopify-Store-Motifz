@@ -38,6 +38,7 @@ color: black;
 }
 </style>
 <script>
+  document.addEventListener('DOMContentLoaded', function() {
   const reelSlider = new Swiper('.block-reels', {
     slidesPerView: 1.2,
     autoplay: {
@@ -54,6 +55,7 @@ color: black;
       },
     },
   });
+})
 </script>
 {% schema %}
 {
